@@ -130,6 +130,11 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative pt-20 pb-24 px-6 overflow-hidden" style={{ backgroundColor: NAVY }}>
+        {/* Hero background photo */}
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-foam.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.18 }} />
+          <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, ${NAVY}cc 0%, ${NAVY}88 50%, ${NAVY}ee 100%)` }} />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl" style={{ backgroundColor: BLUE }} />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <span
@@ -311,6 +316,56 @@ export default function Home() {
           <p className="text-center text-gray-500 text-sm mt-6">
             Ask about add-ons when you call — we&apos;ll quote exactly what makes sense for your vehicle.
           </p>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="py-20 px-6" style={{ backgroundColor: NAVY }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Our Work</h2>
+            <p className="text-gray-400 max-w-xl mx-auto">Real results, real cars. This is what Crisp looks like.</p>
+          </div>
+
+          {/* Before/After grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            {[
+              { src: "/ba-raptor.jpg", label: "Full Exterior Detail — Ford Raptor" },
+              { src: "/ba-interior.jpg", label: "Interior Deep Clean" },
+              { src: "/ba-cargo.jpg", label: "Cargo Area — Before & After" },
+              { src: "/ba-mats.jpg", label: "Floor Mats — Before & After" },
+              { src: "/ba-fabric-seats.jpg", label: "Fabric Seat Shampoo" },
+              { src: "/ba-rear-seats.jpg", label: "Rear Seat Restoration" },
+            ].map((photo) => (
+              <div key={photo.src} className="rounded-2xl overflow-hidden relative group"
+                style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
+                <div className="relative h-56">
+                  <Image src={photo.src} alt={photo.label} fill className="object-cover" />
+                </div>
+                <div className="px-4 py-3" style={{ backgroundColor: NAVY_CARD }}>
+                  <p className="text-sm text-gray-400 font-medium">{photo.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Standalone after shots */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              { src: "/after-interior.jpg", label: "Toyota Highlander — Full Interior Detail" },
+              { src: "/after-seats.jpg", label: "Leather Seats — Conditioned & Restored" },
+            ].map((photo) => (
+              <div key={photo.src} className="rounded-2xl overflow-hidden"
+                style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
+                <div className="relative h-64">
+                  <Image src={photo.src} alt={photo.label} fill className="object-cover" />
+                </div>
+                <div className="px-4 py-3" style={{ backgroundColor: NAVY_CARD }}>
+                  <p className="text-sm text-gray-400 font-medium">{photo.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
