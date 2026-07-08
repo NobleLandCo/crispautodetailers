@@ -3,9 +3,9 @@ import Image from "next/image";
 const PHONE = "2539700858";
 const PHONE_DISPLAY = "(253) 970-0858";
 
-// Brand colors: primary blue (#1E8CC8), navy bg (#0D1B2A), orange accent for promo only
-const BLUE = "#1E8CC8";
-const BLUE_DARK = "#1570A0";
+// Brand colors: teal from logo (#1BBDD4), navy bg (#0D1B2A), orange accent for promo only
+const BLUE = "#1BBDD4";
+const BLUE_DARK = "#159FB3";
 const NAVY = "#0D1B2A";
 const NAVY_LIGHT = "#122335";
 const NAVY_CARD = "#0F1E2E";
@@ -111,7 +111,7 @@ export default function Home() {
         style={{ backgroundColor: "rgba(13,27,42,0.97)", borderColor: "rgba(30,140,200,0.2)", backdropFilter: "blur(8px)" }}
       >
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Image src="/logo.png" alt="Crisp Auto Detailers" width={160} height={50} className="object-contain" style={{ maxHeight: 50 }} />
+          <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={120} height={120} className="object-contain rounded-lg" style={{ maxHeight: 56, width: "auto" }} />
           <a
             href={`tel:${PHONE}`}
             className="text-sm font-bold px-5 py-2 rounded-full transition-all hover:opacity-90"
