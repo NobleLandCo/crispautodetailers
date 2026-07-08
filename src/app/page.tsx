@@ -29,7 +29,7 @@ export default function Home() {
       {/* NAV — static, not sticky */}
       <nav style={{ backgroundColor: NAVY_DARK, borderBottom: "1px solid rgba(27,189,212,0.15)" }}>
         <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={110} height={110} className="rounded-lg object-contain" style={{ maxHeight: 48, width: "auto" }} />
+          <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={160} height={160} className="rounded-xl object-contain" style={{ maxHeight: 96, width: "auto" }} />
           <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
             {PHONE_DISPLAY}
           </a>
