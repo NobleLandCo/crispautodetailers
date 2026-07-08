@@ -39,8 +39,8 @@ export default function Home() {
       {/* HERO */}
       <section className="relative text-center px-6 pt-14 pb-14" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
-          <Image src="/hero-foam.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.12 }} />
-          <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, ${NAVY_DARK}dd, ${NAVY_DARK}ee)` }} />
+          <Image src="/hero-foam.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.45 }} />
+          <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(7,16,24,0.55) 0%, rgba(7,16,24,0.45) 50%, rgba(7,16,24,0.75) 100%)` }} />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-3">
