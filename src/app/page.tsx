@@ -16,18 +16,36 @@ export default function Home() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: NAVY }}>
 
-      {/* NAV — static, not sticky */}
-      <nav style={{ backgroundColor: NAVY_DARK, borderBottom: "1px solid rgba(27,189,212,0.15)" }}>
-        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={160} height={160} className="rounded-xl object-contain" style={{ maxHeight: 96, width: "auto" }} />
+      {/* NAV — sticky, content scrolls under */}
+      <nav style={{ backgroundColor: NAVY_DARK, borderBottom: "1px solid rgba(27,189,212,0.15)", position: "sticky", top: 0, zIndex: 50, overflow: "visible" }}>
+        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between" style={{ overflow: "visible" }}>
+          {/* Logo — oversized, extends below navbar, slightly askew */}
+          <div style={{
+            position: "relative",
+            zIndex: 51,
+            overflow: "visible",
+            marginBottom: "-44px",
+            transform: "rotate(-8deg)",
+            transformOrigin: "center center",
+            filter: "drop-shadow(0 6px 20px rgba(27,189,212,0.4))",
+          }}>
+            <Image
+              src="/crisp-logo-new.jpg"
+              alt="Crisp Auto Detailers"
+              width={148}
+              height={148}
+              className="object-contain"
+              style={{ borderRadius: "50%" }}
+            />
+          </div>
           <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
             {PHONE_DISPLAY}
           </a>
         </div>
       </nav>
 
-      {/* HERO */}
-      <section className="relative text-center px-6 pt-14 pb-14" style={{ backgroundColor: NAVY_DARK }}>
+      {/* HERO — starts immediately under nav so content scrolls behind it */}
+      <section className="relative text-center px-6 pt-20 pb-14" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
           <Image src="/ba-raptor.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.8 }} />
           <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(7,16,24,0.5) 0%, rgba(7,16,24,0.35) 50%, rgba(7,16,24,0.7) 100%)` }} />
