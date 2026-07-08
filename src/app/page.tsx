@@ -8,21 +8,11 @@ const NAVY_DARK = "#071018";
 const ORANGE = "#F59E0B";
 
 const reviews = [
-  { text: "Showed up on time, my truck looks better than the day I bought it.", author: "Mike T., Puyallup" },
-  { text: "Finally found a detailer who actually answers the phone. Booked same day.", author: "Sarah K., South Hill" },
-  { text: "The before and after on my SUV was unreal. Dog hair completely gone.", author: "Jason R., Sumner" },
-  { text: "Super professional, came right to my driveway. Will be a repeat customer.", author: "Amanda L., Edgewood" },
-  { text: "My car looked like it just rolled off the lot. Incredible work.", author: "Chris M., Puyallup" },
   { text: "They came out to my office parking lot. Couldn't have been easier.", author: "Rachel W., South Hill" },
-  { text: "Ceramic coating has held up great — still beading water months later.", author: "Tom B., Orting" },
   { text: "Best detail I've ever had. The interior shampoo on my seats was night and day.", author: "Jen D., Puyallup" },
-  { text: "Answered right away, gave me a fair quote, showed up and crushed it.", author: "Dave N., Sumner" },
-  { text: "Worth every dollar. My wife thought I bought a new car.", author: "Kevin S., South Hill" },
 ];
 
 export default function Home() {
-  const doubled = [...reviews, ...reviews];
-
   return (
     <main className="min-h-screen" style={{ backgroundColor: NAVY }}>
 
@@ -169,35 +159,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* REVIEW TICKER */}
-      <section className="py-10 overflow-hidden" style={{ backgroundColor: NAVY_DARK }}>
+      {/* REVIEWS */}
+      <section className="py-10 px-6" style={{ backgroundColor: NAVY_DARK }}>
         <p className="text-center text-xs font-bold uppercase tracking-widest mb-6" style={{ color: BLUE }}>
           What Our Customers Are Saying
         </p>
-        <div className="relative">
-          {/* Fade edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none" style={{ background: `linear-gradient(to right, ${NAVY_DARK}, transparent)` }} />
-          <div className="absolute right-0 top-0 bottom-0 w-16 z-10 pointer-events-none" style={{ background: `linear-gradient(to left, ${NAVY_DARK}, transparent)` }} />
-
-          <div className="flex gap-5" style={{ animation: "ticker 40s linear infinite", width: "max-content" }}>
-            {doubled.map((r, i) => (
-              <div key={i} className="rounded-xl px-5 py-4 flex-shrink-0" style={{ width: 260, backgroundColor: "rgba(27,189,212,0.06)", border: "1px solid rgba(27,189,212,0.15)" }}>
-                <div className="flex gap-0.5 mb-2">
-                  {[...Array(5)].map((_, s) => <span key={s} style={{ color: ORANGE, fontSize: 11 }}>★</span>)}
-                </div>
-                <p className="text-gray-300 text-xs leading-relaxed mb-2">&ldquo;{r.text}&rdquo;</p>
-                <p className="text-xs font-semibold" style={{ color: BLUE }}>— {r.author}</p>
+        <div className="max-w-3xl mx-auto grid sm:grid-cols-2 gap-4">
+          {reviews.map((r, i) => (
+            <div key={i} className="rounded-xl px-6 py-5" style={{ backgroundColor: "rgba(27,189,212,0.06)", border: "1px solid rgba(27,189,212,0.15)" }}>
+              <div className="flex gap-0.5 mb-3">
+                {[...Array(5)].map((_, s) => <span key={s} style={{ color: ORANGE, fontSize: 13 }}>★</span>)}
               </div>
-            ))}
-          </div>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">&ldquo;{r.text}&rdquo;</p>
+              <p className="text-xs font-semibold" style={{ color: BLUE }}>— {r.author}</p>
+            </div>
+          ))}
         </div>
-
-        <style>{`
-          @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-        `}</style>
       </section>
 
       {/* CTA FOOTER */}
