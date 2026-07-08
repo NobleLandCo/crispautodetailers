@@ -19,7 +19,6 @@ export default function Home() {
       {/* NAV — sticky, content scrolls under */}
       <nav style={{ backgroundColor: NAVY_DARK, borderBottom: "1px solid rgba(27,189,212,0.15)", position: "sticky", top: 0, zIndex: 50, overflow: "visible" }}>
         <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between" style={{ overflow: "visible" }}>
-          {/* Logo — oversized, extends below navbar, slightly askew */}
           <div style={{
             position: "relative",
             zIndex: 51,
@@ -42,7 +41,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO — starts immediately under nav so content scrolls behind it */}
+      {/* HERO */}
       <section className="relative text-center px-6 pt-20 pb-14" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
           <Image src="/ba-raptor.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.8 }} />
@@ -89,10 +88,11 @@ export default function Home() {
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>
             Full Detail Packages
           </h2>
-          <div className="grid md:grid-cols-3 gap-4 mb-8">
+
+          <div className="grid md:grid-cols-3 gap-4 mb-5">
             {[
               { name: "ESSENTIAL", desc: "Hand wash, wheels & tires, full interior vacuum & wipe-down, 3-month ceramic sealant" },
-              { name: "PREMIUM", desc: "Everything in Essential + iron decontamination, carpet & seat shampoo, 6-month ceramic", highlight: true },
+              { name: "PREMIUM", desc: "Everything in Essential + wheel & tire deep clean (barrel + dressing), carpet & seat shampoo, 6-month ceramic", highlight: true },
               { name: "ELITE", desc: "Everything in Premium + clay bar decon, leather conditioning, 12-month ceramic" },
             ].map((pkg) => (
               <div key={pkg.name} className="rounded-xl px-5 py-4 text-center"
@@ -106,7 +106,15 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
+          {/* Complimentary Crisp Care hook */}
+          <div className="rounded-xl px-5 py-3 mb-5 flex items-start gap-3" style={{ backgroundColor: "rgba(27,189,212,0.05)", border: "1px solid rgba(27,189,212,0.15)" }}>
+            <span style={{ color: BLUE, fontSize: 14, flexShrink: 0, marginTop: 2 }}>✦</span>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              <span className="font-semibold text-white">Premium, Elite & Signature customers</span> receive a complimentary Crisp Care maintenance visit 1–2 months after your service — so you can see what &ldquo;always looking like this&rdquo; actually feels like before you decide if it&apos;s for you.
+            </p>
+          </div>
+
+          <div className="rounded-xl overflow-hidden mb-5" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
             <div className="grid grid-cols-4" style={{ backgroundColor: "rgba(7,16,24,0.8)" }}>
               <div className="px-5 py-3 text-xs font-bold text-gray-400 uppercase tracking-wider">Vehicle Size</div>
               {["Essential", "Premium", "Elite"].map((h) => (
@@ -127,6 +135,41 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Ceramic warranty callout */}
+          <div className="rounded-xl px-6 py-4" style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)" }}>
+            <p className="text-xs font-bold text-white mb-1">🛡️ Ceramic Coating Warranty</p>
+            <p className="text-gray-500 text-xs leading-relaxed">
+              Your ceramic coating is only as durable as how it&apos;s maintained. The wrong soap, a dirty rag, or one automatic car wash can undo months of protection. That&apos;s why our ceramic coating warranty is exclusively available to{" "}
+              <a href="/crisp-care" style={{ color: BLUE }}>Crisp Care maintenance plan</a>
+              {" "}customers — we keep the coating performing exactly as rated.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* INTERIOR / EXTERIOR ONLY */}
+      <section className="px-6 pb-10" style={{ backgroundColor: NAVY }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 text-center mb-4">Just the Interior or Exterior?</p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { name: "Interior Only", desc: "Full vacuum, all surfaces, shampoo & wipe-down", prices: ["$159", "$189", "$219"] },
+              { name: "Exterior Only", desc: "Hand wash, foam bath, wheels & tires, ceramic sealant", prices: ["$179", "$209", "$239"] },
+            ].map((item) => (
+              <div key={item.name} className="flex items-center justify-between px-5 py-4 rounded-xl gap-4"
+                style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)" }}>
+                <div>
+                  <p className="font-bold text-white text-sm">{item.name}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{item.desc}</p>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="font-bold text-xs" style={{ color: BLUE }}>{item.prices.join(" · ")}</p>
+                  <p className="text-gray-600 text-xs mt-0.5">Sedan · Mid · Full</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -144,11 +187,27 @@ export default function Home() {
 
       {/* ADD-ONS */}
       <section className="px-6 pb-12">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xs text-gray-500">
-            <span className="text-gray-400 font-semibold">Popular Add-Ons: </span>
-            Pet Hair & Odor Treatment · Engine Bay Detail · Headlight Restoration · Black Trim Restoration · Interior Ceramic Protection · Clay Bar Treatment
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-500 text-center mb-5">Popular Add-Ons</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+            {[
+              { name: "Pet Hair & Odor", price: "$30–70" },
+              { name: "Engine Bay Detail", price: "$50" },
+              { name: "Headlight Restoration", price: "$79" },
+              { name: "Clay Bar Treatment", price: "$45–65" },
+              { name: "Black Trim Restoration", price: "$60–90" },
+              { name: "Carpet & Seat Shampoo", price: "$30–60" },
+              { name: "Leather Conditioning", price: "$30–50" },
+              { name: "Glass Ceramic (windshield)", price: "$60" },
+              { name: "Interior Ceramic Coating", price: "$200" },
+            ].map((addon) => (
+              <div key={addon.name} className="flex items-center justify-between px-4 py-3 rounded-lg"
+                style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}>
+                <span className="text-gray-300 text-xs">{addon.name}</span>
+                <span className="text-xs font-bold ml-2 whitespace-nowrap" style={{ color: BLUE }}>{addon.price}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -159,18 +218,81 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
 
-          {/* Foam car — full width */}
           <div className="rounded-xl overflow-hidden mb-4 relative w-full" style={{ height: 290 }}>
             <Image src="/hero-foam.jpg" alt="Full exterior detail" fill className="object-cover" style={{ objectPosition: "center 70%" }} />
           </div>
 
-          {/* Before/after grid — 4 photos */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {["/ba-raptor.jpg", "/ba-interior.jpg", "/ba-cargo.jpg", "/ba-mats.jpg"].map((src) => (
               <div key={src} className="rounded-xl overflow-hidden relative" style={{ aspectRatio: "4/3" }}>
                 <Image src={src} alt="Before and after detail" fill className="object-cover" />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CRISP CARE */}
+      <section className="py-14 px-6" style={{ backgroundColor: NAVY_DARK }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: BLUE }}>Maintenance Plan</p>
+            <h2 className="text-2xl md:text-3xl font-black text-white mb-3 leading-tight">
+              Crisp Care — Never Think About<br className="hidden md:block" /> Your Car&apos;s Next Wash Again
+            </h2>
+            <p className="text-gray-400 text-sm max-w-2xl mx-auto leading-relaxed">
+              We come to you on a set schedule so your car always looks like the day we finished it — no re-booking, no reminding, no letting it slide back to &ldquo;needs a full detail again.&rdquo;
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 items-start">
+            {/* Pricing */}
+            <div>
+              <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
+                <div className="grid grid-cols-2" style={{ backgroundColor: "rgba(7,16,24,0.9)" }}>
+                  <div className="px-5 py-3 text-xs font-bold text-gray-400 uppercase tracking-wider">Vehicle Size</div>
+                  <div className="px-5 py-3 text-xs font-bold uppercase tracking-wider text-center" style={{ color: BLUE }}>Monthly</div>
+                </div>
+                {[
+                  { label: "Sedan / Coupe", monthly: "$89/mo", prepay: "$899/yr" },
+                  { label: "Mid-size SUV / Truck", monthly: "$109/mo", prepay: "$1,099/yr" },
+                  { label: "Full-size SUV / Truck", monthly: "$129/mo", prepay: "$1,299/yr" },
+                ].map((row, i) => (
+                  <div key={row.label} className="grid grid-cols-2"
+                    style={{ backgroundColor: i % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                    <div className="px-5 py-4">
+                      <p className="text-sm font-semibold text-white">{row.label}</p>
+                    </div>
+                    <div className="px-5 py-4 text-center">
+                      <p className="text-sm font-bold text-white">{row.monthly}</p>
+                      <p className="text-xs text-gray-600 mt-0.5">or {row.prepay}</p>
+                    </div>
+                  </div>
+                ))}
+                <div className="px-5 py-3 text-center text-xs text-gray-600" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                  Month-to-month. Pause or cancel anytime — no contracts.
+                </div>
+              </div>
+            </div>
+
+            {/* Why Crisp Care */}
+            <div className="space-y-4">
+              <div className="rounded-xl px-6 py-5" style={{ backgroundColor: "rgba(27,189,212,0.06)", border: "1px solid rgba(27,189,212,0.15)" }}>
+                <p className="text-sm font-bold text-white mb-2">Why ceramic coating customers need Crisp Care</p>
+                <p className="text-gray-400 text-xs leading-relaxed">
+                  Your ceramic coating is only as durable as how it&apos;s maintained. The wrong soap, a dirty rag, or a single automatic car wash can undo months of protection. Our ceramic coating warranty is exclusively available to Crisp Care customers — we keep the coating performing exactly as it&apos;s rated.
+                </p>
+              </div>
+              <div className="rounded-xl px-6 py-5" style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)" }}>
+                <p className="text-sm font-bold text-white mb-2">✦ Try it before you commit</p>
+                <p className="text-gray-400 text-xs leading-relaxed">
+                  Every Premium, Elite, and Signature detail comes with a complimentary Crisp Care visit 1–2 months after your service. See what &ldquo;always looking like this&rdquo; actually feels like — then decide.
+                </p>
+              </div>
+              <a href={`tel:${PHONE}`} className="flex items-center justify-center gap-2 text-sm font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
+                📞 Ask About Crisp Care
+              </a>
+            </div>
           </div>
         </div>
       </section>
