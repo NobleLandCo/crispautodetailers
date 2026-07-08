@@ -292,6 +292,9 @@ export default function Home() {
               <a href={`tel:${PHONE}`} className="flex items-center justify-center gap-2 text-sm font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
                 📞 Ask About Crisp Care
               </a>
+              <p className="text-center text-xs text-gray-600 mt-2">
+                No prior service needed — <a href="/crisp-care" style={{ color: BLUE }}>learn how it works →</a>
+              </p>
             </div>
           </div>
         </div>

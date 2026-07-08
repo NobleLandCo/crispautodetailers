@@ -91,6 +91,36 @@ export default function CrispCarePage() {
         </div>
       </section>
 
+      {/* STANDALONE ENTRY — no prior service needed */}
+      <section className="py-14 px-6" style={{ backgroundColor: NAVY_DARK }}>
+        <div className="max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6">
+            {/* For new customers */}
+            <div className="rounded-xl px-7 py-7" style={{ backgroundColor: "rgba(27,189,212,0.06)", border: "1px solid rgba(27,189,212,0.18)" }}>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: BLUE }}>Never Used Us Before?</p>
+              <p className="text-white font-bold text-sm mb-3 leading-snug">You don&apos;t need a prior detail to start Crisp Care.</p>
+              <p className="text-gray-400 text-xs leading-relaxed mb-5">
+                Call us and we&apos;ll talk through your car&apos;s current condition. If it&apos;s in reasonable shape, we can start a maintenance plan right away. If it needs a reset first, we&apos;ll quote you a one-time detail and roll you straight into Crisp Care after — so you&apos;re not paying for upkeep on a car that wasn&apos;t clean to begin with.
+              </p>
+              <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 text-xs font-bold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
+                📞 Let&apos;s Talk — {PHONE_DISPLAY}
+              </a>
+            </div>
+            {/* For existing customers */}
+            <div className="rounded-xl px-7 py-7" style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: BLUE }}>Already a Crisp Customer?</p>
+              <p className="text-white font-bold text-sm mb-3 leading-snug">Your complimentary visit is waiting.</p>
+              <p className="text-gray-400 text-xs leading-relaxed mb-5">
+                Every Premium, Elite, and Signature detail includes a free Crisp Care visit 1–2 months after your service. Call us to lock in your date — it&apos;s already included in what you paid.
+              </p>
+              <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 text-xs font-bold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: "rgba(27,189,212,0.12)", color: BLUE, border: `1px solid ${BLUE}` }}>
+                📞 Book My Complimentary Visit
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="py-14 px-6" style={{ backgroundColor: NAVY_DARK }}>
         <div className="max-w-3xl mx-auto">
