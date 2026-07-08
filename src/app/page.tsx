@@ -59,6 +59,19 @@ const packages = [
   },
 ];
 
+const otherServices = [
+  {
+    name: "Interior Only",
+    description: "Full interior detail — vacuum, shampoo, wipe-down, windows.",
+    prices: { sedan: 159, midSuv: 189, fullSuv: 219 },
+  },
+  {
+    name: "Signature Exterior Refresh",
+    description: "Hand wash + clay bar decontamination + ceramic sealant.",
+    prices: { sedan: 179, midSuv: 209, fullSuv: 239 },
+  },
+];
+
 const addons = [
   { name: "Pet Hair & Odor Treatment", price: "Ask for quote" },
   { name: "Engine Bay Detail", price: "$50" },
@@ -323,6 +336,39 @@ export default function Home() {
                 >
                   Book This Package
                 </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OTHER SERVICES */}
+      <section className="py-12 px-6" style={{ backgroundColor: "#0D1B2A" }}>
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-black text-white text-center mb-8">Other Services</h3>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {otherServices.map((svc) => (
+              <div
+                key={svc.name}
+                className="rounded-2xl p-6"
+                style={{ backgroundColor: "#111D2B", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
+                <h4 className="text-lg font-bold text-white mb-1">{svc.name}</h4>
+                <p className="text-gray-400 text-sm mb-4">{svc.description}</p>
+                <div className="space-y-1">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-400">Sedan/Coupe</span>
+                    <span className="font-bold text-white">${svc.prices.sedan}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-400">Mid-size SUV/Truck</span>
+                    <span className="font-bold text-white">${svc.prices.midSuv}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-400">Full-size SUV/Truck</span>
+                    <span className="font-bold text-white">${svc.prices.fullSuv}</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
