@@ -8,40 +8,36 @@ const packages = [
     name: "Essential",
     description: "A thorough clean inside and out — everything your car needs to look great.",
     features: [
-      "Exterior hand wash & dry",
-      "Wheel & tire cleaning",
+      "Hand wash, wheels & tires",
+      "Full interior vacuum & wipe-down",
       "Window cleaning (in & out)",
-      "Interior vacuum",
-      "Dashboard & console wipe-down",
       "Door jamb cleaning",
+      "3-month ceramic sealant",
     ],
     prices: { sedan: 199, midSuv: 229, fullSuv: 259 },
     highlight: false,
   },
   {
     name: "Premium",
-    description: "Our most popular package. Deep clean with extra attention to detail.",
+    description: "Everything in Essential + iron decontamination, carpet & seat shampoo, and 6-month ceramic.",
     features: [
       "Everything in Essential",
-      "Clay bar decontamination",
-      "Interior deep vacuum & shampoo",
-      "Leather conditioning",
+      "Iron decontamination",
+      "Carpet & seat shampoo",
       "Tire dressing",
-      "3-month paint protection spray",
+      "6-month ceramic sealant",
     ],
     prices: { sedan: 259, midSuv: 289, fullSuv: 319 },
     highlight: true,
   },
   {
     name: "Elite",
-    description: "The full treatment — show-room condition from top to bottom.",
+    description: "Everything in Premium + clay bar decon, leather conditioning, and 12-month ceramic.",
     features: [
       "Everything in Premium",
-      "Paint decontamination & polish",
-      "12-month ceramic paint protection",
-      "Black trim restoration",
-      "Engine bay cleaning",
-      "Headlight restoration",
+      "Clay bar decontamination",
+      "Leather conditioning",
+      "12-month ceramic protection",
     ],
     prices: { sedan: 339, midSuv: 369, fullSuv: 399 },
     highlight: false,
@@ -49,14 +45,14 @@ const packages = [
   {
     name: "Signature",
     subtitle: "Pre-Sale Detail",
-    description: "Maximize your sale price. We make your car look as good as it possibly can before it goes on the market.",
+    description: "Our most complete detail. The one to book if you're selling. Buyers pay $500–$2,000 more for a car that shows this kind of care.",
     features: [
-      "Full interior & exterior detail",
-      "Paint correction & polish",
-      "Odor elimination treatment",
-      "Glass ceramic coating",
-      "Professional photo-ready finish",
-      "Buyer impression guarantee",
+      "Full Elite-level detail",
+      "Engine bay detail",
+      "Black trim restoration",
+      "Gas cap detail & exhaust tip polish",
+      "Glass ceramic protection",
+      "Scratch touch-up",
     ],
     prices: { sedan: 450, midSuv: 490, fullSuv: 530 },
     highlight: false,
@@ -64,17 +60,16 @@ const packages = [
 ];
 
 const addons = [
-  { name: "Deep Clean", price: "$30–70" },
-  { name: "Carpet & Seat Shampoo", price: "$30–60" },
-  { name: "Clay Bar Treatment", price: "$45–65" },
-  { name: "Leather Conditioning", price: "$30–50" },
-  { name: "Black Trim Restoration", price: "$60–90" },
-  { name: "Engine Bay Cleaning", price: "$50" },
+  { name: "Pet Hair & Odor Treatment", price: "Ask for quote" },
+  { name: "Engine Bay Detail", price: "$50" },
   { name: "Headlight Restoration", price: "$79" },
-  { name: "Glass Ceramic Coating", price: "$60" },
+  { name: "Black Trim Restoration", price: "$60–90" },
   { name: "Interior Ceramic Protection", price: "$200 (+ $100/yr reapply)" },
+  { name: "Clay Bar Treatment", price: "$45–65" },
+  { name: "Carpet & Seat Shampoo", price: "$30–60" },
+  { name: "Leather Conditioning", price: "$30–50" },
+  { name: "Glass Ceramic Coating", price: "$60" },
   { name: "Exhaust Tip Polish", price: "$25–40" },
-  { name: "Gas Cap Detail", price: "$20" },
 ];
 
 const serviceAreas = [
@@ -83,6 +78,7 @@ const serviceAreas = [
   "Sumner",
   "Orting",
   "Edgewood",
+  "Pierce County",
 ];
 
 const steps = [
@@ -106,6 +102,13 @@ const steps = [
   },
 ];
 
+const trustBadges = [
+  { icon: "🛡️", label: "Fully Insured" },
+  { icon: "🏠", label: "Family-Run" },
+  { icon: "📍", label: "South Sound Local" },
+  { icon: "⭐", label: "Ceramic Every Tier" },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: "#0D1B2A" }}>
@@ -124,7 +127,7 @@ export default function Home() {
           </span>
           <a
             href={`tel:${PHONE}`}
-            className="text-sm font-bold px-5 py-2 rounded-full transition-all"
+            className="text-sm font-bold px-5 py-2 rounded-full transition-all hover:opacity-90"
             style={{ backgroundColor: "#F97316", color: "#fff" }}
           >
             {PHONE_DISPLAY}
@@ -132,12 +135,19 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* PROMO BANNER */}
+      <div
+        className="text-center text-sm font-bold py-2 px-4 pt-[72px]"
+        style={{ backgroundColor: "#F97316", color: "#fff" }}
+      >
+        ★ NEW CUSTOMER OFFER: $20 OFF YOUR FIRST FULL DETAIL — Call to redeem ★
+      </div>
+
       {/* HERO */}
       <section
-        className="relative pt-36 pb-24 px-6 overflow-hidden"
+        className="relative pt-20 pb-24 px-6 overflow-hidden"
         style={{ backgroundColor: "#0D1B2A" }}
       >
-        {/* background accent */}
         <div
           className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl"
           style={{ backgroundColor: "#F97316" }}
@@ -149,19 +159,17 @@ export default function Home() {
           >
             Mobile Auto Detailing · South Pierce County
           </span>
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
-            We Come to You.
+          <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-4">
+            Mobile Detailing
             <br />
-            <span style={{ color: "#F97316" }}>Your Car Leaves</span>
-            <br />
-            Spotless.
+            <span style={{ color: "#F97316" }}>That Comes to You.</span>
           </h1>
+          <p className="text-2xl font-bold text-gray-300 mb-6">Keep It Crisp.</p>
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
             Professional mobile detailing at your home, office, or anywhere in
-            Puyallup, South Hill, Sumner, Orting & Edgewood. No drop-off, no
-            hassle — just a clean car.
+            Puyallup, South Hill, Sumner, Orting & Edgewood. No drop-off. No waiting rooms. No wasted time.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
               href={`tel:${PHONE}`}
               className="inline-flex items-center justify-center gap-2 text-lg font-bold px-8 py-4 rounded-full transition-all hover:opacity-90"
@@ -176,6 +184,20 @@ export default function Home() {
             >
               View Packages ↓
             </a>
+          </div>
+
+          {/* Trust badges */}
+          <div className="flex flex-wrap justify-center gap-4">
+            {trustBadges.map((badge) => (
+              <div
+                key={badge.label}
+                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
+                style={{ backgroundColor: "rgba(255,255,255,0.05)", color: "#d1d5db" }}
+              >
+                <span>{badge.icon}</span>
+                <span>{badge.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -212,21 +234,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Detailing Packages
+              Full Detail Packages
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
-              All packages include mobile service — we come to you. Pricing
-              varies by vehicle size.
+              Real ceramic protection at every tier — not just wax. Priced fairly by vehicle size, no surprise upcharges.
             </p>
           </div>
 
-          {/* Vehicle size legend */}
-          <div
-            className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-gray-400"
-          >
+          <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-gray-400">
             <span>🚗 Sedan/Coupe</span>
-            <span>🚙 Mid SUV/Truck</span>
-            <span>🚐 Full SUV/Truck</span>
+            <span>🚙 Mid-size SUV/Truck</span>
+            <span>🚐 Full-size SUV/Truck</span>
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -263,7 +281,6 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* Pricing */}
                 <div
                   className="rounded-xl p-4 mb-5 space-y-1"
                   style={{ backgroundColor: "rgba(0,0,0,0.25)" }}
@@ -273,16 +290,15 @@ export default function Home() {
                     <span className="font-bold text-white">${pkg.prices.sedan}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Mid SUV/Truck</span>
+                    <span className="text-gray-400">Mid-size SUV/Truck</span>
                     <span className="font-bold text-white">${pkg.prices.midSuv}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Full SUV/Truck</span>
+                    <span className="text-gray-400">Full-size SUV/Truck</span>
                     <span className="font-bold text-white">${pkg.prices.fullSuv}</span>
                   </div>
                 </div>
 
-                {/* Features */}
                 <ul className="space-y-2 mb-6 flex-1">
                   {pkg.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-gray-300">
@@ -318,7 +334,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Add-On Services
+              Popular Add-Ons
             </h2>
             <p className="text-gray-400">
               Customize your detail — add exactly what your car needs.
@@ -354,18 +370,18 @@ export default function Home() {
             {[
               {
                 icon: "⚡",
-                title: "5-Minute Callback",
-                body: "Call or text and we get back to you within 5 minutes. Most detailers take hours — by then the job is gone.",
-              },
-              {
-                icon: "🚗",
                 title: "We Come to You",
-                body: "No drop-off, no waiting around. We show up at your home or office and take care of everything while you keep moving.",
+                body: "No drop-off, no waiting rooms, no wasted time. We show up at your home or office and take care of everything while you keep moving.",
               },
               {
-                icon: "✋",
-                title: "We Answer the Phone",
-                body: "Real person, every time. We book on the spot, answer questions, and show up when we say we will.",
+                icon: "🛡️",
+                title: "Real Ceramic Protection",
+                body: "Every tier includes genuine ceramic — not just wax. Your paint is actually protected, not just shiny for a week.",
+              },
+              {
+                icon: "💰",
+                title: "Transparent Pricing",
+                body: "Sized fairly by vehicle. You know the price before we show up — no surprise upcharges, ever.",
               },
             ].map((item) => (
               <div
@@ -389,7 +405,7 @@ export default function Home() {
             Service Area
           </h2>
           <p className="text-gray-400 mb-8">
-            We serve South Pierce County. Not sure if we cover your area? Give us a call.
+            Proudly serving South Pierce County. Not sure if we cover your area? Give us a call.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((area) => (
@@ -406,13 +422,16 @@ export default function Home() {
       </section>
 
       {/* BOTTOM CTA */}
-      <section
-        className="py-24 px-6 text-center"
-        style={{ backgroundColor: "#0D1B2A" }}
-      >
+      <section className="py-24 px-6 text-center" style={{ backgroundColor: "#0D1B2A" }}>
         <div className="max-w-2xl mx-auto">
+          <div
+            className="inline-block text-sm font-bold px-5 py-2 rounded-full mb-6"
+            style={{ backgroundColor: "rgba(249,115,22,0.15)", color: "#F97316" }}
+          >
+            ★ $20 OFF your first full detail — new customers only
+          </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready for a Clean Car?
+            Ready to Keep It Crisp?
           </h2>
           <p className="text-gray-400 mb-10 text-lg">
             Call or text and we&apos;ll get you booked — usually same or next day.
@@ -425,7 +444,7 @@ export default function Home() {
             📞 {PHONE_DISPLAY}
           </a>
           <p className="text-gray-600 text-sm mt-6">
-            Serving Puyallup, South Hill, Sumner, Orting & Edgewood
+            Puyallup · South Hill · Sumner · Orting · Edgewood · Pierce County
           </p>
         </div>
       </section>
@@ -436,7 +455,7 @@ export default function Home() {
         style={{ borderColor: "rgba(255,255,255,0.07)", backgroundColor: "#070F18" }}
       >
         <p className="text-gray-600 text-sm">
-          © {new Date().getFullYear()} Crisp Auto Detailers · Puyallup, WA ·{" "}
+          © {new Date().getFullYear()} Crisp Auto Detailers · Puyallup, WA · Fully Insured ·{" "}
           <a href={`tel:${PHONE}`} style={{ color: "#F97316" }}>
             {PHONE_DISPLAY}
           </a>
