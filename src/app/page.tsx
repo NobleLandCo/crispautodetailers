@@ -330,7 +330,7 @@ export default function Home() {
             📞 {PHONE_DISPLAY}
           </a>
           <p className="text-gray-500 text-xs">
-            crispautodetailers.com · @crispautodetailers · Fully Insured
+            crispautodetailers.com · Fully Insured
           </p>
         </div>
       </section>
