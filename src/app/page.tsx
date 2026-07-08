@@ -1,7 +1,15 @@
-import Link from "next/link";
+import Image from "next/image";
 
 const PHONE = "2539700858";
 const PHONE_DISPLAY = "(253) 970-0858";
+
+// Brand colors: primary blue (#1E8CC8), navy bg (#0D1B2A), orange accent for promo only
+const BLUE = "#1E8CC8";
+const BLUE_DARK = "#1570A0";
+const NAVY = "#0D1B2A";
+const NAVY_LIGHT = "#122335";
+const NAVY_CARD = "#0F1E2E";
+const ORANGE = "#F59E0B";
 
 const packages = [
   {
@@ -84,62 +92,30 @@ const addons = [
 ];
 
 const serviceAreas = [
-  "Puyallup",
-  "South Hill",
-  "Sumner",
-  "Orting",
-  "Edgewood",
-  "Pierce County",
+  "Puyallup", "South Hill", "Sumner", "Orting", "Edgewood", "Pierce County",
 ];
 
 const steps = [
-  {
-    number: "01",
-    title: "Book or Call",
-    description:
-      "Give us a call or shoot us a text. We'll confirm your appointment same day.",
-  },
-  {
-    number: "02",
-    title: "We Come to You",
-    description:
-      "We show up at your home, office, or wherever works for you — no drop-off needed.",
-  },
-  {
-    number: "03",
-    title: "Drive Away Clean",
-    description:
-      "We handle everything. You walk out to a spotless car, every time.",
-  },
-];
-
-const trustBadges = [
-  { icon: "🛡️", label: "Fully Insured" },
-  { icon: "🏠", label: "Family-Run" },
-  { icon: "📍", label: "South Sound Local" },
-  { icon: "⭐", label: "Ceramic Every Tier" },
+  { number: "01", title: "Book or Call", description: "Give us a call or shoot us a text. We'll confirm your appointment same day." },
+  { number: "02", title: "We Come to You", description: "We show up at your home, office, or wherever works for you — no drop-off needed." },
+  { number: "03", title: "Drive Away Clean", description: "We handle everything. You walk out to a spotless car, every time." },
 ];
 
 export default function Home() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: "#0D1B2A" }}>
+    <main className="min-h-screen" style={{ backgroundColor: NAVY }}>
+
       {/* NAV */}
       <nav
         className="fixed top-0 w-full z-50 border-b"
-        style={{
-          backgroundColor: "rgba(13,27,42,0.95)",
-          borderColor: "rgba(249,115,22,0.2)",
-          backdropFilter: "blur(8px)",
-        }}
+        style={{ backgroundColor: "rgba(13,27,42,0.97)", borderColor: "rgba(30,140,200,0.2)", backdropFilter: "blur(8px)" }}
       >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="text-xl font-black tracking-tight text-white">
-            CRISP<span style={{ color: "#F97316" }}>.</span>
-          </span>
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+          <Image src="/logo.png" alt="Crisp Auto Detailers" width={160} height={50} className="object-contain" style={{ maxHeight: 50 }} />
           <a
             href={`tel:${PHONE}`}
             className="text-sm font-bold px-5 py-2 rounded-full transition-all hover:opacity-90"
-            style={{ backgroundColor: "#F97316", color: "#fff" }}
+            style={{ backgroundColor: BLUE, color: "#fff" }}
           >
             {PHONE_DISPLAY}
           </a>
@@ -147,33 +123,25 @@ export default function Home() {
       </nav>
 
       {/* PROMO BANNER */}
-      <div
-        className="text-center text-sm font-bold py-2 px-4 pt-[72px]"
-        style={{ backgroundColor: "#F97316", color: "#fff" }}
-      >
+      <div className="text-center text-sm font-bold py-2 px-4 pt-[72px]"
+        style={{ backgroundColor: ORANGE, color: "#fff" }}>
         ★ NEW CUSTOMER OFFER: $20 OFF YOUR FIRST FULL DETAIL — Call to redeem ★
       </div>
 
       {/* HERO */}
-      <section
-        className="relative pt-20 pb-24 px-6 overflow-hidden"
-        style={{ backgroundColor: "#0D1B2A" }}
-      >
-        <div
-          className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl"
-          style={{ backgroundColor: "#F97316" }}
-        />
+      <section className="relative pt-20 pb-24 px-6 overflow-hidden" style={{ backgroundColor: NAVY }}>
+        <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl" style={{ backgroundColor: BLUE }} />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <span
             className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full mb-6"
-            style={{ backgroundColor: "rgba(249,115,22,0.15)", color: "#F97316" }}
+            style={{ backgroundColor: "rgba(30,140,200,0.15)", color: BLUE }}
           >
             Mobile Auto Detailing · South Pierce County
           </span>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-4">
             Mobile Detailing
             <br />
-            <span style={{ color: "#F97316" }}>That Comes to You.</span>
+            <span style={{ color: BLUE }}>That Comes to You.</span>
           </h1>
           <p className="text-2xl font-bold text-gray-300 mb-6">Keep It Crisp.</p>
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
@@ -184,7 +152,7 @@ export default function Home() {
             <a
               href={`tel:${PHONE}`}
               className="inline-flex items-center justify-center gap-2 text-lg font-bold px-8 py-4 rounded-full transition-all hover:opacity-90"
-              style={{ backgroundColor: "#F97316", color: "#fff" }}
+              style={{ backgroundColor: BLUE, color: "#fff" }}
             >
               📞 Call to Book — {PHONE_DISPLAY}
             </a>
@@ -196,17 +164,17 @@ export default function Home() {
               View Packages ↓
             </a>
           </div>
-
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4">
-            {trustBadges.map((badge) => (
-              <div
-                key={badge.label}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
-                style={{ backgroundColor: "rgba(255,255,255,0.05)", color: "#d1d5db" }}
-              >
-                <span>{badge.icon}</span>
-                <span>{badge.label}</span>
+            {[
+              { icon: "🚗", label: "We Come to You" },
+              { icon: "🛡️", label: "Fully Insured" },
+              { icon: "🏠", label: "Family-Run" },
+              { icon: "⭐", label: "Ceramic Every Tier" },
+            ].map((b) => (
+              <div key={b.label} className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"
+                style={{ backgroundColor: "rgba(255,255,255,0.05)", color: "#d1d5db" }}>
+                <span>{b.icon}</span><span>{b.label}</span>
               </div>
             ))}
           </div>
@@ -216,24 +184,13 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section className="py-20 px-6" style={{ backgroundColor: "#070F18" }}>
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-14">
-            How It Works
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-14">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div
-                  className="text-5xl font-black mb-4"
-                  style={{ color: "#F97316" }}
-                >
-                  {step.number}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  {step.description}
-                </p>
+                <div className="text-5xl font-black mb-4" style={{ color: BLUE }}>{step.number}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
@@ -241,97 +198,64 @@ export default function Home() {
       </section>
 
       {/* PACKAGES */}
-      <section id="packages" className="py-20 px-6" style={{ backgroundColor: "#0D1B2A" }}>
+      <section id="packages" className="py-20 px-6" style={{ backgroundColor: NAVY }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Full Detail Packages
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Full Detail Packages</h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               Real ceramic protection at every tier — not just wax. Priced fairly by vehicle size, no surprise upcharges.
             </p>
           </div>
-
           <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-gray-400">
             <span>🚗 Sedan/Coupe</span>
             <span>🚙 Mid-size SUV/Truck</span>
             <span>🚐 Full-size SUV/Truck</span>
           </div>
-
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
             {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className="relative rounded-2xl p-6 flex flex-col"
+              <div key={pkg.name} className="relative rounded-2xl p-6 flex flex-col"
                 style={{
-                  backgroundColor: pkg.highlight ? "#1A2E45" : "#111D2B",
-                  border: pkg.highlight
-                    ? "2px solid #F97316"
-                    : "1px solid rgba(255,255,255,0.08)",
-                }}
-              >
+                  backgroundColor: pkg.highlight ? NAVY_LIGHT : NAVY_CARD,
+                  border: pkg.highlight ? `2px solid ${BLUE}` : "1px solid rgba(255,255,255,0.08)",
+                }}>
                 {pkg.highlight && (
-                  <span
-                    className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full"
-                    style={{ backgroundColor: "#F97316", color: "#fff" }}
-                  >
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full"
+                    style={{ backgroundColor: BLUE, color: "#fff" }}>
                     Most Popular
                   </span>
                 )}
                 <div className="mb-4">
                   <h3 className="text-xl font-black text-white">
                     {pkg.name}
-                    {pkg.subtitle && (
-                      <span className="block text-sm font-semibold" style={{ color: "#F97316" }}>
-                        {pkg.subtitle}
-                      </span>
-                    )}
+                    {pkg.subtitle && <span className="block text-sm font-semibold" style={{ color: BLUE }}>{pkg.subtitle}</span>}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">
-                    {pkg.description}
-                  </p>
+                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">{pkg.description}</p>
                 </div>
-
-                <div
-                  className="rounded-xl p-4 mb-5 space-y-1"
-                  style={{ backgroundColor: "rgba(0,0,0,0.25)" }}
-                >
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Sedan/Coupe</span>
-                    <span className="font-bold text-white">${pkg.prices.sedan}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Mid-size SUV/Truck</span>
-                    <span className="font-bold text-white">${pkg.prices.midSuv}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Full-size SUV/Truck</span>
-                    <span className="font-bold text-white">${pkg.prices.fullSuv}</span>
-                  </div>
+                <div className="rounded-xl p-4 mb-5 space-y-1" style={{ backgroundColor: "rgba(0,0,0,0.25)" }}>
+                  {[
+                    ["Sedan/Coupe", pkg.prices.sedan],
+                    ["Mid-size SUV/Truck", pkg.prices.midSuv],
+                    ["Full-size SUV/Truck", pkg.prices.fullSuv],
+                  ].map(([label, price]) => (
+                    <div key={label as string} className="flex justify-between text-sm">
+                      <span className="text-gray-400">{label}</span>
+                      <span className="font-bold text-white">${price}</span>
+                    </div>
+                  ))}
                 </div>
-
                 <ul className="space-y-2 mb-6 flex-1">
                   {pkg.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-gray-300">
-                      <span style={{ color: "#F97316" }} className="mt-0.5 flex-shrink-0">✓</span>
-                      {f}
+                      <span style={{ color: BLUE }} className="mt-0.5 flex-shrink-0">✓</span>{f}
                     </li>
                   ))}
                 </ul>
-
-                <a
-                  href={`tel:${PHONE}`}
+                <a href={`tel:${PHONE}`}
                   className="block text-center font-bold py-3 rounded-xl transition-all hover:opacity-90"
-                  style={
-                    pkg.highlight
-                      ? { backgroundColor: "#F97316", color: "#fff" }
-                      : {
-                          backgroundColor: "transparent",
-                          color: "#F97316",
-                          border: "1px solid #F97316",
-                        }
-                  }
-                >
+                  style={pkg.highlight
+                    ? { backgroundColor: BLUE, color: "#fff" }
+                    : { backgroundColor: "transparent", color: BLUE, border: `1px solid ${BLUE}` }
+                  }>
                   Book This Package
                 </a>
               </div>
@@ -341,31 +265,26 @@ export default function Home() {
       </section>
 
       {/* OTHER SERVICES */}
-      <section className="py-12 px-6" style={{ backgroundColor: "#0D1B2A" }}>
+      <section className="py-12 px-6" style={{ backgroundColor: NAVY }}>
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-black text-white text-center mb-8">Other Services</h3>
           <div className="grid sm:grid-cols-2 gap-6">
             {otherServices.map((svc) => (
-              <div
-                key={svc.name}
-                className="rounded-2xl p-6"
-                style={{ backgroundColor: "#111D2B", border: "1px solid rgba(255,255,255,0.08)" }}
-              >
+              <div key={svc.name} className="rounded-2xl p-6"
+                style={{ backgroundColor: NAVY_CARD, border: "1px solid rgba(255,255,255,0.08)" }}>
                 <h4 className="text-lg font-bold text-white mb-1">{svc.name}</h4>
                 <p className="text-gray-400 text-sm mb-4">{svc.description}</p>
                 <div className="space-y-1">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Sedan/Coupe</span>
-                    <span className="font-bold text-white">${svc.prices.sedan}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Mid-size SUV/Truck</span>
-                    <span className="font-bold text-white">${svc.prices.midSuv}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-400">Full-size SUV/Truck</span>
-                    <span className="font-bold text-white">${svc.prices.fullSuv}</span>
-                  </div>
+                  {[
+                    ["Sedan/Coupe", svc.prices.sedan],
+                    ["Mid-size SUV/Truck", svc.prices.midSuv],
+                    ["Full-size SUV/Truck", svc.prices.fullSuv],
+                  ].map(([label, price]) => (
+                    <div key={label as string} className="flex justify-between text-sm">
+                      <span className="text-gray-400">{label}</span>
+                      <span className="font-bold text-white">${price}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
@@ -377,24 +296,15 @@ export default function Home() {
       <section className="py-20 px-6" style={{ backgroundColor: "#070F18" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Popular Add-Ons
-            </h2>
-            <p className="text-gray-400">
-              Customize your detail — add exactly what your car needs.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Popular Add-Ons</h2>
+            <p className="text-gray-400">Customize your detail — add exactly what your car needs.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-3">
             {addons.map((addon) => (
-              <div
-                key={addon.name}
-                className="flex items-center justify-between px-5 py-4 rounded-xl"
-                style={{ backgroundColor: "#111D2B", border: "1px solid rgba(255,255,255,0.07)" }}
-              >
+              <div key={addon.name} className="flex items-center justify-between px-5 py-4 rounded-xl"
+                style={{ backgroundColor: NAVY_CARD, border: "1px solid rgba(255,255,255,0.07)" }}>
                 <span className="text-gray-300 font-medium">{addon.name}</span>
-                <span className="font-bold" style={{ color: "#F97316" }}>
-                  {addon.price}
-                </span>
+                <span className="font-bold" style={{ color: BLUE }}>{addon.price}</span>
               </div>
             ))}
           </div>
@@ -405,39 +315,18 @@ export default function Home() {
       </section>
 
       {/* WHY CRISP */}
-      <section className="py-20 px-6" style={{ backgroundColor: "#0D1B2A" }}>
+      <section className="py-20 px-6" style={{ backgroundColor: NAVY }}>
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-14">
-            Why Crisp?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-14">Why Crisp?</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              {
-                icon: "🚗",
-                title: "We Come to You",
-                body: "No drop-off, no waiting rooms, no wasted time.",
-              },
-              {
-                icon: "🛡️",
-                title: "Real Ceramic Protection",
-                body: "Every tier includes genuine ceramic — not just wax.",
-              },
-              {
-                icon: "💰",
-                title: "Transparent Pricing",
-                body: "Sized fairly by vehicle — no surprise upcharges.",
-              },
-              {
-                icon: "🏠",
-                title: "Local & Trusted",
-                body: "Family-run, proudly serving the South Sound.",
-              },
+              { icon: "🚗", title: "We Come to You", body: "No drop-off, no waiting rooms, no wasted time." },
+              { icon: "🛡️", title: "Real Ceramic Protection", body: "Every tier includes genuine ceramic — not just wax." },
+              { icon: "💰", title: "Transparent Pricing", body: "Sized fairly by vehicle — no surprise upcharges." },
+              { icon: "🏠", title: "Local & Trusted", body: "Family-run, proudly serving the South Sound." },
             ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl p-7"
-                style={{ backgroundColor: "#111D2B", border: "1px solid rgba(255,255,255,0.07)" }}
-              >
+              <div key={item.title} className="rounded-2xl p-7 text-center"
+                style={{ backgroundColor: NAVY_CARD, border: "1px solid rgba(255,255,255,0.07)" }}>
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-400 leading-relaxed text-sm">{item.body}</p>
@@ -450,19 +339,12 @@ export default function Home() {
       {/* SERVICE AREA */}
       <section className="py-16 px-6" style={{ backgroundColor: "#070F18" }}>
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-black text-white mb-6">
-            Service Area
-          </h2>
-          <p className="text-gray-400 mb-8">
-            Proudly serving South Pierce County. Not sure if we cover your area? Give us a call.
-          </p>
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-6">Service Area</h2>
+          <p className="text-gray-400 mb-8">Proudly serving South Pierce County. Not sure if we cover your area? Give us a call.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((area) => (
-              <span
-                key={area}
-                className="px-5 py-2 rounded-full text-sm font-semibold"
-                style={{ backgroundColor: "rgba(249,115,22,0.12)", color: "#F97316", border: "1px solid rgba(249,115,22,0.3)" }}
-              >
+              <span key={area} className="px-5 py-2 rounded-full text-sm font-semibold"
+                style={{ backgroundColor: "rgba(30,140,200,0.12)", color: BLUE, border: `1px solid rgba(30,140,200,0.3)` }}>
                 {area}
               </span>
             ))}
@@ -471,25 +353,17 @@ export default function Home() {
       </section>
 
       {/* BOTTOM CTA */}
-      <section className="py-24 px-6 text-center" style={{ backgroundColor: "#0D1B2A" }}>
+      <section className="py-24 px-6 text-center" style={{ backgroundColor: NAVY }}>
         <div className="max-w-2xl mx-auto">
-          <div
-            className="inline-block text-sm font-bold px-5 py-2 rounded-full mb-6"
-            style={{ backgroundColor: "rgba(249,115,22,0.15)", color: "#F97316" }}
-          >
+          <div className="inline-block text-sm font-bold px-5 py-2 rounded-full mb-6"
+            style={{ backgroundColor: `rgba(245,158,11,0.15)`, color: ORANGE }}>
             ★ $20 OFF your first full detail — new customers only
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            Ready to Keep It Crisp?
-          </h2>
-          <p className="text-gray-400 mb-10 text-lg">
-            Call or text and we&apos;ll get you booked — usually same or next day.
-          </p>
-          <a
-            href={`tel:${PHONE}`}
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Ready to Keep It Crisp?</h2>
+          <p className="text-gray-400 mb-10 text-lg">Call or text and we&apos;ll get you booked — usually same or next day.</p>
+          <a href={`tel:${PHONE}`}
             className="inline-flex items-center justify-center gap-2 text-xl font-black px-10 py-5 rounded-full transition-all hover:opacity-90"
-            style={{ backgroundColor: "#F97316", color: "#fff" }}
-          >
+            style={{ backgroundColor: BLUE, color: "#fff" }}>
             📞 {PHONE_DISPLAY}
           </a>
           <p className="text-gray-600 text-sm mt-6">
@@ -499,17 +373,14 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer
-        className="py-8 px-6 text-center border-t"
-        style={{ borderColor: "rgba(255,255,255,0.07)", backgroundColor: "#070F18" }}
-      >
+      <footer className="py-8 px-6 text-center border-t"
+        style={{ borderColor: "rgba(255,255,255,0.07)", backgroundColor: "#070F18" }}>
         <p className="text-gray-600 text-sm">
           © {new Date().getFullYear()} Crisp Auto Detailers · Puyallup, WA · Fully Insured ·{" "}
-          <a href={`tel:${PHONE}`} style={{ color: "#F97316" }}>
-            {PHONE_DISPLAY}
-          </a>
+          <a href={`tel:${PHONE}`} style={{ color: BLUE }}>{PHONE_DISPLAY}</a>
         </p>
       </footer>
+
     </main>
   );
 }
