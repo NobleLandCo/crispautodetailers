@@ -111,7 +111,7 @@ export default function CrispCarePage() {
               <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: BLUE }}>Already a Crisp Customer?</p>
               <p className="text-white font-bold text-sm mb-3 leading-snug">Your complimentary visit is waiting.</p>
               <p className="text-gray-400 text-xs leading-relaxed mb-5">
-                Every Premium, Elite, and Signature detail includes a free Crisp Care visit 1–2 months after your service. Call us to lock in your date — it&apos;s already included in what you paid.
+                Every Premium, Elite, and Signature detail includes a free Crisp Care visit 1 month after your service. Call us to lock in your date — it&apos;s already included in what you paid.
               </p>
               <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 text-xs font-bold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: "rgba(27,189,212,0.12)", color: BLUE, border: `1px solid ${BLUE}` }}>
                 📞 Book My Complimentary Visit
@@ -169,7 +169,7 @@ export default function CrispCarePage() {
             Included free with Premium, Elite & Signature details.
           </h2>
           <p className="text-gray-400 text-sm max-w-xl mx-auto leading-relaxed mb-8">
-            Every Premium, Elite, and Signature detail includes a complimentary Crisp Care visit 1–2 months after your service — so you can see exactly what &ldquo;always looking like this&rdquo; feels like before you decide if it&apos;s for you.
+            Every Premium, Elite, and Signature detail includes a complimentary Crisp Care visit 1 month after your service — so you can see exactly what &ldquo;always looking like this&rdquo; feels like before you decide if it&apos;s for you.
           </p>
           <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold px-7 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: "rgba(27,189,212,0.12)", color: BLUE, border: `1px solid ${BLUE}` }}>
             ← View Full Detail Packages

@@ -110,7 +110,7 @@ export default function Home() {
           <div className="rounded-xl px-5 py-3 mb-5 flex items-start gap-3" style={{ backgroundColor: "rgba(27,189,212,0.05)", border: "1px solid rgba(27,189,212,0.15)" }}>
             <span style={{ color: BLUE, fontSize: 14, flexShrink: 0, marginTop: 2 }}>✦</span>
             <p className="text-xs text-gray-400 leading-relaxed">
-              <span className="font-semibold text-white">Premium, Elite & Signature customers</span> receive a complimentary Crisp Care maintenance visit 1–2 months after your service — so you can see what &ldquo;always looking like this&rdquo; actually feels like before you decide if it&apos;s for you.
+              <span className="font-semibold text-white">Premium, Elite & Signature customers</span> receive a complimentary Crisp Care maintenance visit 1 month after your service — so you can see what &ldquo;always looking like this&rdquo; actually feels like before you decide if it&apos;s for you.
             </p>
           </div>
 
@@ -286,7 +286,7 @@ export default function Home() {
               <div className="rounded-xl px-6 py-5" style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <p className="text-sm font-bold text-white mb-2">✦ Try it before you commit</p>
                 <p className="text-gray-400 text-xs leading-relaxed">
-                  Every Premium, Elite, and Signature detail comes with a complimentary Crisp Care visit 1–2 months after your service. See what &ldquo;always looking like this&rdquo; actually feels like — then decide.
+                  Every Premium, Elite, and Signature detail comes with a complimentary Crisp Care visit 1 month after your service. See what &ldquo;always looking like this&rdquo; actually feels like — then decide.
                 </p>
               </div>
               <a href={`tel:${PHONE}`} className="flex items-center justify-center gap-2 text-sm font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
