@@ -7,12 +7,27 @@ const NAVY = "#0D1B2A";
 const NAVY_DARK = "#071018";
 const ORANGE = "#F59E0B";
 
+const reviews = [
+  { text: "Showed up on time, my truck looks better than the day I bought it.", author: "Mike T., Puyallup" },
+  { text: "Finally found a detailer who actually answers the phone. Booked same day.", author: "Sarah K., South Hill" },
+  { text: "The before and after on my SUV was unreal. Dog hair completely gone.", author: "Jason R., Sumner" },
+  { text: "Super professional, came right to my driveway. Will be a repeat customer.", author: "Amanda L., Edgewood" },
+  { text: "My car looked like it just rolled off the lot. Incredible work.", author: "Chris M., Puyallup" },
+  { text: "They came out to my office parking lot. Couldn't have been easier.", author: "Rachel W., South Hill" },
+  { text: "Ceramic coating has held up great — still beading water months later.", author: "Tom B., Orting" },
+  { text: "Best detail I've ever had. The interior shampoo on my seats was night and day.", author: "Jen D., Puyallup" },
+  { text: "Answered right away, gave me a fair quote, showed up and crushed it.", author: "Dave N., Sumner" },
+  { text: "Worth every dollar. My wife thought I bought a new car.", author: "Kevin S., South Hill" },
+];
+
 export default function Home() {
+  const doubled = [...reviews, ...reviews];
+
   return (
     <main className="min-h-screen" style={{ backgroundColor: NAVY }}>
 
-      {/* NAV */}
-      <nav className="fixed top-0 w-full z-50" style={{ backgroundColor: "rgba(7,16,24,0.97)", backdropFilter: "blur(8px)", borderBottom: "1px solid rgba(27,189,212,0.15)" }}>
+      {/* NAV — static, not sticky */}
+      <nav style={{ backgroundColor: NAVY_DARK, borderBottom: "1px solid rgba(27,189,212,0.15)" }}>
         <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
           <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={110} height={110} className="rounded-lg object-contain" style={{ maxHeight: 48, width: "auto" }} />
           <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
@@ -22,19 +37,16 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="relative text-center px-6 pt-28 pb-16" style={{ backgroundColor: NAVY_DARK }}>
+      <section className="relative text-center px-6 pt-14 pb-14" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
           <Image src="/hero-foam.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.12 }} />
           <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, ${NAVY_DARK}dd, ${NAVY_DARK}ee)` }} />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto">
-          <div className="flex justify-center mb-6">
-            <Image src="/logo.jpg" alt="Crisp Auto Detailers" width={120} height={120} className="rounded-xl" />
-          </div>
           <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-3">
             MOBILE DETAILING THAT COMES TO YOU
           </h1>
-          <p className="text-gray-400 text-sm tracking-widest mb-6">
+          <p className="text-gray-400 text-sm tracking-widest">
             Puyallup · South Hill · Sumner · Orting · Edgewood · Pierce County
           </p>
         </div>
@@ -63,7 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIVIDER */}
       <div className="max-w-5xl mx-auto px-6"><div style={{ height: 1, backgroundColor: "rgba(255,255,255,0.07)" }} /></div>
 
       {/* PACKAGES */}
@@ -72,8 +83,6 @@ export default function Home() {
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>
             Full Detail Packages
           </h2>
-
-          {/* 3 package description cards */}
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             {[
               { name: "ESSENTIAL", desc: "Hand wash, wheels & tires, full interior vacuum & wipe-down, 3-month ceramic sealant" },
@@ -91,22 +100,20 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Pricing table */}
           <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
-            {/* Header row */}
             <div className="grid grid-cols-4" style={{ backgroundColor: "rgba(7,16,24,0.8)" }}>
               <div className="px-5 py-3 text-xs font-bold text-gray-400 uppercase tracking-wider">Vehicle Size</div>
               {["Essential", "Premium", "Elite"].map((h) => (
                 <div key={h} className="px-5 py-3 text-xs font-bold uppercase tracking-wider text-center" style={{ color: BLUE }}>{h}</div>
               ))}
             </div>
-            {/* Data rows */}
             {[
               { label: "Sedan / Coupe", prices: [199, 259, 339] },
               { label: "Mid-size SUV / Truck", prices: [229, 289, 369] },
               { label: "Full-size SUV / Truck", prices: [259, 319, 399] },
             ].map((row, i) => (
-              <div key={row.label} className="grid grid-cols-4" style={{ backgroundColor: i % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+              <div key={row.label} className="grid grid-cols-4"
+                style={{ backgroundColor: i % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                 <div className="px-5 py-4 text-sm font-semibold text-white">{row.label}</div>
                 {row.prices.map((p, j) => (
                   <div key={j} className="px-5 py-4 text-sm font-bold text-center text-white">${p}</div>
@@ -139,28 +146,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIVIDER */}
       <div className="max-w-5xl mx-auto px-6"><div style={{ height: 1, backgroundColor: "rgba(255,255,255,0.07)" }} /></div>
 
       {/* GALLERY */}
       <section className="py-12 px-6" style={{ backgroundColor: NAVY }}>
         <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {[
-              "/ba-raptor.jpg",
-              "/ba-interior.jpg",
-              "/ba-cargo.jpg",
-              "/ba-mats.jpg",
-              "/after-interior.jpg",
-              "/after-seats.jpg",
-            ].map((src) => (
+
+          {/* Foam car — full width */}
+          <div className="rounded-xl overflow-hidden mb-4 relative w-full" style={{ height: 260 }}>
+            <Image src="/hero-foam.jpg" alt="Full exterior detail" fill className="object-cover object-center" />
+          </div>
+
+          {/* Before/after grid — 4 photos */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {["/ba-raptor.jpg", "/ba-interior.jpg", "/ba-cargo.jpg", "/ba-mats.jpg"].map((src) => (
               <div key={src} className="rounded-xl overflow-hidden relative" style={{ aspectRatio: "4/3" }}>
-                <Image src={src} alt="Detailing work" fill className="object-cover" />
+                <Image src={src} alt="Before and after detail" fill className="object-cover" />
               </div>
             ))}
           </div>
         </div>
+      </section>
+
+      {/* REVIEW TICKER */}
+      <section className="py-10 overflow-hidden" style={{ backgroundColor: NAVY_DARK }}>
+        <p className="text-center text-xs font-bold uppercase tracking-widest mb-6" style={{ color: BLUE }}>
+          What Our Customers Are Saying
+        </p>
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none" style={{ background: `linear-gradient(to right, ${NAVY_DARK}, transparent)` }} />
+          <div className="absolute right-0 top-0 bottom-0 w-16 z-10 pointer-events-none" style={{ background: `linear-gradient(to left, ${NAVY_DARK}, transparent)` }} />
+
+          <div className="flex gap-5" style={{ animation: "ticker 40s linear infinite", width: "max-content" }}>
+            {doubled.map((r, i) => (
+              <div key={i} className="rounded-xl px-5 py-4 flex-shrink-0" style={{ width: 260, backgroundColor: "rgba(27,189,212,0.06)", border: "1px solid rgba(27,189,212,0.15)" }}>
+                <div className="flex gap-0.5 mb-2">
+                  {[...Array(5)].map((_, s) => <span key={s} style={{ color: ORANGE, fontSize: 11 }}>★</span>)}
+                </div>
+                <p className="text-gray-300 text-xs leading-relaxed mb-2">&ldquo;{r.text}&rdquo;</p>
+                <p className="text-xs font-semibold" style={{ color: BLUE }}>— {r.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <style>{`
+          @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
       </section>
 
       {/* CTA FOOTER */}
