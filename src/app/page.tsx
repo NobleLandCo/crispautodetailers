@@ -6,33 +6,31 @@ const PHONE_DISPLAY = "(253) 970-0858";
 const packages = [
   {
     name: "Essential",
-    description: "A thorough clean inside and out — everything your car needs to look great.",
+    description: "Hand wash, wheels & tires, full interior vacuum & wipe-down, 3-month ceramic sealant.",
     features: [
-      "Hand wash, wheels & tires",
-      "Full interior vacuum & wipe-down",
-      "Window cleaning (in & out)",
-      "Door jamb cleaning",
-      "3-month ceramic sealant",
+      "Hand wash & foam bath",
+      "Wheels, tires & windows",
+      "Vacuum, jambs, seat & carpet wipe-down",
+      "3-month WetCoat ceramic sealant",
     ],
     prices: { sedan: 199, midSuv: 229, fullSuv: 259 },
     highlight: false,
   },
   {
     name: "Premium",
-    description: "Everything in Essential + iron decontamination, carpet & seat shampoo, and 6-month ceramic.",
+    description: "Everything in Essential + iron decontamination, carpet & seat shampoo, 6-month ceramic.",
     features: [
       "Everything in Essential",
       "Iron decontamination",
       "Carpet & seat shampoo",
-      "Tire dressing",
-      "6-month ceramic sealant",
+      "6-month ceramic protection",
     ],
     prices: { sedan: 259, midSuv: 289, fullSuv: 319 },
     highlight: true,
   },
   {
     name: "Elite",
-    description: "Everything in Premium + clay bar decon, leather conditioning, and 12-month ceramic.",
+    description: "Everything in Premium + clay bar decon, leather conditioning, 12-month ceramic.",
     features: [
       "Everything in Premium",
       "Clay bar decontamination",
@@ -47,12 +45,12 @@ const packages = [
     subtitle: "Pre-Sale Detail",
     description: "Our most complete detail. The one to book if you're selling. Buyers pay $500–$2,000 more for a car that shows this kind of care.",
     features: [
-      "Full Elite-level detail",
+      "Elite protection + full detail",
       "Engine bay detail",
       "Black trim restoration",
       "Gas cap detail & exhaust tip polish",
       "Glass ceramic protection",
-      "Scratch touch-up",
+      "Isolated scratch touch-up",
     ],
     prices: { sedan: 450, midSuv: 490, fullSuv: 530 },
     highlight: false,
@@ -412,22 +410,27 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-14">
             Why Crisp?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
               {
-                icon: "⚡",
+                icon: "🚗",
                 title: "We Come to You",
-                body: "No drop-off, no waiting rooms, no wasted time. We show up at your home or office and take care of everything while you keep moving.",
+                body: "No drop-off, no waiting rooms, no wasted time.",
               },
               {
                 icon: "🛡️",
                 title: "Real Ceramic Protection",
-                body: "Every tier includes genuine ceramic — not just wax. Your paint is actually protected, not just shiny for a week.",
+                body: "Every tier includes genuine ceramic — not just wax.",
               },
               {
                 icon: "💰",
                 title: "Transparent Pricing",
-                body: "Sized fairly by vehicle. You know the price before we show up — no surprise upcharges, ever.",
+                body: "Sized fairly by vehicle — no surprise upcharges.",
+              },
+              {
+                icon: "🏠",
+                title: "Local & Trusted",
+                body: "Family-run, proudly serving the South Sound.",
               },
             ].map((item) => (
               <div
