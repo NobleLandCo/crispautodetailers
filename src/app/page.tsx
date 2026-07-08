@@ -180,10 +180,10 @@ export default function Home() {
       {/* CTA FOOTER */}
       <section className="py-14 px-6 text-center" style={{ backgroundColor: NAVY_DARK }}>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-black text-white mb-2">Book Your Detail Today</h2>
-          <p className="text-5xl md:text-6xl mt-1" style={{ fontFamily: "'Dancing Script', cursive", color: BLUE, lineHeight: 1.2 }}>
+          <p className="text-5xl md:text-6xl mb-2" style={{ fontFamily: "'Dancing Script', cursive", color: BLUE, lineHeight: 1.2 }}>
             Keep It Crisp.
           </p>
+          <h2 className="text-2xl font-black text-white">Book Your Detail Today</h2>
           <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 text-xl font-black px-10 py-4 rounded-full mt-6 mb-5 hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
             📞 {PHONE_DISPLAY}
           </a>
