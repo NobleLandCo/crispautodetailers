@@ -48,8 +48,9 @@ export default function Home() {
           <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(7,16,24,0.5) 0%, rgba(7,16,24,0.35) 50%, rgba(7,16,24,0.7) 100%)` }} />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-3">
-            MOBILE DETAILING THAT COMES TO YOU
+          <h1 className="mb-3">
+            <span className="block text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">MOBILE DETAILING</span>
+            <span className="block text-4xl md:text-6xl" style={{ fontFamily: "'Dancing Script', cursive", color: BLUE, lineHeight: 1.2 }}>We come to you!</span>
           </h1>
           <p className="text-gray-400 text-sm tracking-widest">
             Puyallup · South Hill · Sumner · Orting · Edgewood · Pierce County
