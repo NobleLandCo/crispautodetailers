@@ -27,15 +27,13 @@ export default function Home() {
             marginBottom: "-44px",
             transform: "rotate(-8deg)",
             transformOrigin: "center center",
-            filter: "drop-shadow(0 6px 20px rgba(27,189,212,0.4))",
           }}>
             <Image
-              src="/crisp-logo-new.jpg"
+              src="/crisp-logo-new.png"
               alt="Crisp Auto Detailers"
               width={148}
               height={148}
               className="object-contain"
-              style={{ borderRadius: "50%" }}
             />
           </div>
           <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
