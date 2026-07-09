@@ -42,9 +42,11 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="relative text-center px-6 pt-20 pb-14" style={{ backgroundColor: NAVY_DARK }}>
+      <section className="relative text-center px-6 pt-20 pb-14 overflow-hidden" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
-          <Image src="/ba-raptor.jpg" alt="" fill className="object-cover object-center" style={{ opacity: 0.8 }} />
+          <div style={{ position: "absolute", top: "-25%", left: "-15%", right: "-15%", bottom: "-15%" }}>
+            <Image src="/ba-raptor.jpg" alt="" fill className="object-cover" style={{ objectPosition: "center 45%", opacity: 0.8 }} />
+          </div>
           <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(7,16,24,0.5) 0%, rgba(7,16,24,0.35) 50%, rgba(7,16,24,0.7) 100%)` }} />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto">
