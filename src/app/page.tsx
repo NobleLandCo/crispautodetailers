@@ -222,9 +222,7 @@ export default function Home() {
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
 
           <div className="rounded-xl overflow-hidden mb-4 relative w-full" style={{ height: 290 }}>
-            <div style={{ position: "absolute", top: "-20%", left: "-20%", right: "-20%", bottom: "-20%" }}>
-              <Image src="/hero-foam.jpg" alt="Full exterior detail" fill className="object-cover" style={{ objectPosition: "center 55%" }} />
-            </div>
+            <Image src="/hero-foam.jpg" alt="Full exterior detail" fill className="object-cover" style={{ objectPosition: "center 70%" }} />
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
