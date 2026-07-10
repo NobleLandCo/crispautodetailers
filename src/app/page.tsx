@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const PHONE = "2539700858";
 const PHONE_DISPLAY = "(253) 970-0858";
@@ -35,9 +36,12 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
-            {PHONE_DISPLAY}
-          </a>
+          <div className="flex items-center gap-4">
+            <Link href="/blog" className="text-sm font-semibold hidden sm:block" style={{ color: BLUE }}>Tips &amp; Guides</Link>
+            <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
+              {PHONE_DISPLAY}
+            </a>
+          </div>
         </div>
       </nav>
 
