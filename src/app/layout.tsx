@@ -18,6 +18,35 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  name: "Crisp Auto Detailers",
+  description: "Professional mobile auto detailing serving Puyallup, South Hill, Sumner, Orting, Edgewood, and Pierce County, WA. We come to you.",
+  url: "https://crispautodetailers.com",
+  telephone: "+12539700858",
+  email: "info@crispautodetailers.com",
+  areaServed: [
+    { "@type": "City", name: "Puyallup", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "City", name: "South Hill", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "City", name: "Sumner", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "City", name: "Orting", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "City", name: "Edgewood", containedInPlace: { "@type": "State", name: "Washington" } },
+  ],
+  priceRange: "$$",
+  openingHours: "Mo-Sa 08:00-18:00",
+  hasMap: "https://maps.google.com/?q=Crisp+Auto+Detailers+Puyallup+WA",
+  sameAs: [
+    "https://www.instagram.com/crispautodetailers",
+  ],
+  makesOffer: [
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Essential Mobile Detail", description: "Exterior foam wash, clay bar, wax, tire shine, interior vacuum and wipe-down" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Premium Mobile Detail", description: "Full interior shampoo, seat cleaning, odor treatment, exterior detail with paint sealant" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elite Mobile Detail", description: "Paint correction, ceramic coating, full interior and exterior restoration" } },
+    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Signature Pre-Sale Detail", description: "Pre-listing detail package designed to maximize vehicle resale value" } },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -26,6 +55,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
