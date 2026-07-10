@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/mobile-detailing-sumner-wa`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/mobile-detailing-orting-wa`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/mobile-detailing-edgewood-wa`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/mobile-detailing-tacoma-wa`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/mobile-detailing-auburn-wa`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({

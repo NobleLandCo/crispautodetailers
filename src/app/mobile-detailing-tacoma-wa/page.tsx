@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mobile Auto Detailing Orting WA | Crisp Auto Detailers",
-  description: "Mobile auto detailing in Orting, WA. We bring professional car detailing to your home or driveway. No drop-off. Ceramic coating, interior shampoo, full details. Call (253) 970-0858.",
-  keywords: "mobile auto detailing Orting WA, car detailing Orting, mobile detailer Orting Washington",
+  title: "Mobile Auto Detailing Tacoma WA | Crisp Auto Detailers",
+  description: "Mobile auto detailing in Tacoma, WA. Professional car detailing at your home, apartment, or office — no drop-off needed. Ceramic coating, interior shampoo, full details. Call (253) 970-0858.",
+  keywords: "mobile auto detailing Tacoma WA, car detailing Tacoma, mobile detailer Tacoma Washington, auto detail Tacoma",
   openGraph: {
-    title: "Mobile Auto Detailing Orting WA | Crisp Auto Detailers",
-    description: "Professional mobile detailing in Orting, WA. We come to you. Call (253) 970-0858.",
-    url: "https://crispautodetailers.com/mobile-detailing-orting-wa",
+    title: "Mobile Auto Detailing Tacoma WA | Crisp Auto Detailers",
+    description: "Professional mobile detailing in Tacoma, WA. We come to you. Ceramic coating, interior deep clean, full details. Call (253) 970-0858.",
+    url: "https://crispautodetailers.com/mobile-detailing-tacoma-wa",
     siteName: "Crisp Auto Detailers",
     locale: "en_US",
     type: "website",
@@ -22,7 +22,7 @@ const ORANGE = "#F59E0B";
 const PHONE = "2539700858";
 const PHONE_DISPLAY = "(253) 970-0858";
 
-export default function OrtingPage() {
+export default function TacomaPage() {
   return (
     <main style={{ backgroundColor: NAVY, minHeight: "100vh" }}>
 
@@ -39,12 +39,12 @@ export default function OrtingPage() {
 
       <section className="py-16 px-6 text-center" style={{ backgroundColor: NAVY_DARK }}>
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: TEAL }}>Orting, WA</p>
+          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: TEAL }}>Tacoma, WA</p>
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
-            Mobile Auto Detailing<br />in Orting, WA
+            Mobile Auto Detailing<br />in Tacoma, WA
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            We bring professional auto detailing to Orting. Trucks, SUVs, sedans — we work in your driveway so you don't lose your day.
+            We bring professional auto detailing straight to you in Tacoma — your driveway, apartment lot, or work parking. No drop-off, no commute, no waiting.
           </p>
           <a href={`tel:${PHONE}`} className="inline-block font-black px-8 py-4 rounded-full text-lg" style={{ backgroundColor: TEAL, color: "#fff" }}>
             Call {PHONE_DISPLAY}
@@ -54,17 +54,17 @@ export default function OrtingPage() {
 
       <section className="py-14 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-black text-white mb-6">Detailing in Orting — Built Around Your Schedule</h2>
-          <p className="text-gray-400 mb-4">Orting is a small town with a lot of outdoor-lifestyle vehicles — Tacomas, 4Runners, work trucks, off-road rigs. These are the vehicles that need real detailing attention, not just a quick rinse. Trail dust, mud, pet hair, and interior grime build up fast when a vehicle is actually being used.</p>
-          <p className="text-gray-400 mb-4">Mobile detailing is the right fit for Orting because most homes have driveway space and there's no need to drive 20+ minutes to Puyallup just to hand off your keys. We come to you, do the work properly, and leave when you're satisfied.</p>
-          <p className="text-gray-400 mb-8">We cover Orting proper and surrounding rural areas — give us a call to confirm we can reach your address.</p>
+          <h2 className="text-2xl font-black text-white mb-6">Serving All of Tacoma</h2>
+          <p className="text-gray-400 mb-4">Tacoma is a big city with a lot of vehicles — and a lot of situations where dropping a car off at a shop just doesn't work. Street parking, apartment living, busy schedules, vehicles that get used hard. Mobile detailing solves all of it: we come to wherever the car is and do the full job there.</p>
+          <p className="text-gray-400 mb-4">We cover Tacoma neighborhoods including Proctor, North End, Stadium District, Hilltop, South Tacoma, Lincoln, Eastside, Fircrest, and the waterfront areas. If you're not sure whether we reach your address, call us — we're flexible.</p>
+          <p className="text-gray-400 mb-8">Tacoma's salt air near the Narrows and the urban grime from I-5 and Pacific Avenue are tougher on paint than most people realize. Regular detailing — especially with a ceramic coat — makes a real difference in how well your clear coat holds up long-term.</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { icon: "🚙", title: "Trucks & Off-Road Rigs Welcome", sub: "We know what a real work vehicle needs — not just a surface wipe" },
-              { icon: "🐾", title: "Pet Hair Removal", sub: "Add-on service for dog hair embedded in upholstery and carpet" },
-              { icon: "🛡️", title: "Ceramic Coating", sub: "Protect your paint from trail dust, UV, and year-round PNW weather" },
-              { icon: "📞", title: "Easy Booking", sub: "Call or text — we'll confirm your address and get you scheduled fast" },
+              { icon: "🏙️", title: "Apartment & Street Parking OK", sub: "No driveway? No problem — we work with the space you have" },
+              { icon: "🛡️", title: "Ceramic Coating", sub: "Protect against salt air, UV, and urban road grime" },
+              { icon: "🚗", title: "All Vehicle Types", sub: "Sedans, SUVs, trucks, luxury vehicles — all handled the same way" },
+              { icon: "✓", title: "Transparent Pricing", sub: "Flat rates by vehicle size — no surprise charges at the end" },
             ].map((v) => (
               <div key={v.title} className="rounded-xl p-5 flex gap-4" style={{ backgroundColor: NAVY_DARK, border: "1px solid rgba(27,189,212,0.12)" }}>
                 <span className="text-2xl">{v.icon}</span>
@@ -84,10 +84,10 @@ export default function OrtingPage() {
           <p className="text-gray-500 text-sm mb-8">Sedan / Mid-SUV / Full-SUV</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { name: "Essential", price: "$199 / $229 / $259", desc: "Exterior wash, clay bar, wax, tire shine, interior vacuum and wipe-down." },
-              { name: "Premium", price: "$259 / $289 / $319", desc: "Interior shampoo, seat cleaning, odor treatment + full exterior detail." },
-              { name: "Elite", price: "$339 / $369 / $399", desc: "Paint correction, ceramic coating, complete interior and exterior restoration." },
-              { name: "Signature Pre-Sale", price: "$450 / $490 / $530", desc: "Pre-listing detail to maximize resale presentation and value." },
+              { name: "Essential", price: "$199 / $229 / $259", desc: "Exterior foam wash, clay bar, wax, tire shine, interior vacuum and wipe-down. Great for quarterly maintenance." },
+              { name: "Premium", price: "$259 / $289 / $319", desc: "Everything in Essential + interior shampoo, seat cleaning, odor treatment, dashboard deep clean." },
+              { name: "Elite", price: "$339 / $369 / $399", desc: "Full interior/exterior restoration, paint correction, ceramic coating. Best for long-term protection." },
+              { name: "Signature Pre-Sale", price: "$450 / $490 / $530", desc: "Purpose-built for vehicles going to market. Maximizes presentation and resale value." },
             ].map((pkg) => (
               <div key={pkg.name} className="rounded-xl p-5" style={{ border: "1px solid rgba(27,189,212,0.15)", backgroundColor: NAVY }}>
                 <p className="font-black text-white text-base mb-1">{pkg.name}</p>
@@ -101,7 +101,7 @@ export default function OrtingPage() {
 
       <section className="py-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-black text-white mb-3">Book Your Orting Detail</h2>
+          <h2 className="text-2xl font-black text-white mb-3">Book Your Tacoma Detail</h2>
           <p className="text-gray-400 mb-8">New customers get $20 off their first full detail. Call or text to book.</p>
           <a href={`tel:${PHONE}`} className="inline-block font-black px-8 py-4 rounded-full text-lg" style={{ backgroundColor: TEAL, color: "#fff" }}>
             Call {PHONE_DISPLAY}
@@ -111,10 +111,10 @@ export default function OrtingPage() {
 
       <div className="text-center py-6 text-gray-600 text-xs" style={{ borderTop: "1px solid rgba(27,189,212,0.08)" }}>
         Also serving:{" "}
-        <Link href="/mobile-detailing-tacoma-wa" style={{ color: TEAL }}>Tacoma</Link> ·{" "}
         <Link href="/mobile-detailing-auburn-wa" style={{ color: TEAL }}>Auburn</Link> ·{" "}
         <Link href="/mobile-detailing-south-hill-wa" style={{ color: TEAL }}>South Hill</Link> ·{" "}
         <Link href="/mobile-detailing-sumner-wa" style={{ color: TEAL }}>Sumner</Link> ·{" "}
+        <Link href="/mobile-detailing-orting-wa" style={{ color: TEAL }}>Orting</Link> ·{" "}
         <Link href="/mobile-detailing-edgewood-wa" style={{ color: TEAL }}>Edgewood</Link> ·{" "}
         <Link href="/" style={{ color: TEAL }}>Puyallup</Link>
       </div>
