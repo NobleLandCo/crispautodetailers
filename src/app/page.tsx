@@ -225,7 +225,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
 
-          <div className="rounded-xl overflow-hidden mb-4 w-full" style={{ height: 290, backgroundImage: "url('/hero-exterior-detail.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} />
+          <div className="rounded-xl overflow-hidden mb-4 w-full">
+            <img src="/hero-exterior-detail.jpg" alt="Exterior Detail - Paint Correction &amp; Ceramic Coating" style={{ width: "100%", height: "auto", display: "block" }} />
+          </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {["/ba-raptor.jpg", "/ba-interior.jpg", "/ba-cargo.jpg", "/ba-mats.jpg"].map((src) => (
