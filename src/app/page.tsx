@@ -221,9 +221,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
 
-          <div className="rounded-xl overflow-hidden mb-4 relative w-full" style={{ height: 290 }}>
-            <Image src="/hero-foam-2.jpg" alt="Full exterior detail" fill style={{ objectFit: "cover", objectPosition: "center 70%" }} />
-          </div>
+          <div className="rounded-xl overflow-hidden mb-4 w-full" style={{ height: 290, backgroundImage: "url('/hero-foam-2.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {["/ba-raptor.jpg", "/ba-interior.jpg", "/ba-cargo.jpg", "/ba-mats.jpg"].map((src) => (
