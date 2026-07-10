@@ -49,7 +49,7 @@ export default function Home() {
       <section className="relative text-center px-6 pt-20 pb-14 overflow-hidden" style={{ backgroundColor: NAVY_DARK }}>
         <div className="absolute inset-0 z-0">
           <div style={{ position: "absolute", top: "-25%", left: "-15%", right: "-15%", bottom: "-15%" }}>
-            <Image src="/ba-raptor.jpg" alt="" fill className="object-cover" style={{ objectPosition: "center 45%", opacity: 0.8 }} />
+            <Image src="/hero-exterior-detail.jpg" alt="" fill className="object-cover" style={{ objectPosition: "center 50%", opacity: 0.85 }} />
           </div>
           <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(7,16,24,0.5) 0%, rgba(7,16,24,0.35) 50%, rgba(7,16,24,0.7) 100%)` }} />
         </div>
