@@ -217,9 +217,9 @@ export default function Home() {
       <div className="max-w-5xl mx-auto px-6"><div style={{ height: 1, backgroundColor: "rgba(255,255,255,0.07)" }} /></div>
 
       {/* GALLERY */}
-      <section className="py-12 px-6" style={{ backgroundColor: NAVY }}>
+      <section className="pt-8 pb-6 px-6" style={{ backgroundColor: NAVY }}>
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-center text-xl font-black mb-8 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
+          <h2 className="text-center text-xl font-black mb-4 tracking-wide" style={{ color: BLUE }}>Our Work</h2>
 
           <div className="rounded-xl overflow-hidden mb-4 relative w-full" style={{ height: 290 }}>
             <Image src="/hero-foam.jpg" alt="Full exterior detail" fill style={{ objectFit: "cover", objectPosition: "center 70%" }} />
