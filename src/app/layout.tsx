@@ -39,6 +39,13 @@ const localBusinessSchema = {
   sameAs: [
     "https://www.instagram.com/crispautodetailers",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "1",
+    bestRating: "5",
+    worstRating: "1",
+  },
   makesOffer: [
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Essential Mobile Detail", description: "Exterior foam wash, clay bar, wax, tire shine, interior vacuum and wipe-down" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Premium Mobile Detail", description: "Full interior shampoo, seat cleaning, odor treatment, exterior detail with paint sealant" } },

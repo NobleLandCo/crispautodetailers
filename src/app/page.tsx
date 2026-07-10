@@ -230,9 +230,14 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {["/ba-raptor.jpg", "/ba-interior.jpg", "/ba-cargo.jpg", "/ba-mats.jpg"].map((src) => (
+            {[
+              { src: "/ba-raptor.jpg", alt: "Ford Raptor exterior detail before and after - paint correction and ceramic coating Puyallup WA" },
+              { src: "/ba-interior.jpg", alt: "Car interior before and after detailing - seats and dashboard deep cleaned by mobile detailer" },
+              { src: "/ba-cargo.jpg", alt: "Cargo area before and after auto detail - professional deep cleaning South Pierce County" },
+              { src: "/ba-mats.jpg", alt: "Floor mats before and after mobile detailing - carpet shampoo service Puyallup WA" },
+            ].map(({ src, alt }) => (
               <div key={src} className="rounded-xl overflow-hidden relative" style={{ aspectRatio: "4/3" }}>
-                <Image src={src} alt="Before and after detail" fill className="object-cover" />
+                <Image src={src} alt={alt} fill className="object-cover" />
               </div>
             ))}
           </div>
@@ -324,6 +329,28 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* SERVICE AREAS */}
+      <div className="py-8 px-6" style={{ borderTop: "1px solid rgba(27,189,212,0.08)", backgroundColor: NAVY_DARK }}>
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: BLUE }}>Service Areas</p>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm">
+            {[
+              { href: "/", label: "Puyallup" },
+              { href: "/mobile-detailing-south-hill-wa", label: "South Hill" },
+              { href: "/mobile-detailing-sumner-wa", label: "Sumner" },
+              { href: "/mobile-detailing-orting-wa", label: "Orting" },
+              { href: "/mobile-detailing-edgewood-wa", label: "Edgewood" },
+              { href: "/mobile-detailing-tacoma-wa", label: "Tacoma" },
+              { href: "/mobile-detailing-auburn-wa", label: "Auburn" },
+            ].map(({ href, label }) => (
+              <Link key={href} href={href} className="font-semibold hover:opacity-80 transition-opacity" style={{ color: "rgba(255,255,255,0.6)" }}>
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* CTA FOOTER */}
       <section className="py-14 px-6 text-center" style={{ backgroundColor: NAVY_DARK }}>
