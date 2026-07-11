@@ -13,6 +13,108 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 
+  // ── July 11, 2026 ─────────────────────────────────────────────────────────
+
+  {
+    slug: "auto-detailing-sumner-wa",
+    title: "Auto Detailing in Sumner, WA — Professional Mobile Detailing for Your Vehicle",
+    metaTitle: "Auto Detailing Sumner WA | Professional Mobile Detailers",
+    metaDescription: "Professional auto detailing in Sumner, WA. Paint protection, ceramic coating, and interior detailing. Call (253) 970-0858 for mobile service today.",
+    date: "2026-07-11",
+    category: "Services",
+    excerpt: "Sumner drivers deserve professional auto detailing that protects their investment. Crisp brings mobile detailing directly to Sumner and surrounding Pierce County.",
+    readingTime: "6 min read",
+    primaryKeyword: "auto detailing Sumner WA",
+    content: `
+<h1>Auto Detailing in Sumner, WA — Professional Mobile Detailing for Your Vehicle</h1>
+
+<p>Sumner has grown over the past decade — newer neighborhoods, young families, commuters, and people who care about their vehicles. If you're looking for professional auto detailing in the Sumner area, you have options. Most of them involve dropping your car off, waiting a few hours, and hoping for the best. But mobile detailing changes that equation entirely.</p>
+
+<p>A professional mobile detailer comes to your home or office in Sumner, brings all the equipment, does the full detail while you work or relax, and you never have to leave. For a busy person in Pierce County, it's the obvious choice.</p>
+
+<h2>Why Auto Detailing Matters in Western Washington</h2>
+
+<p>The Pacific Northwest climate — wet winters, dry sunny summers, tree pollen, road grime — is genuinely tough on automotive paint. Left unprotected, a car's clear coat oxidizes and becomes dull within 6–12 months. Contaminants bond to the paint and become permanent if not removed regularly.</p>
+
+<p>Sumner's location between Puyallup and Tacoma means you're dealing with:</p>
+
+<ul>
+  <li><strong>Seasonal tree sap and pollen:</strong> Douglas firs, maples, and alders drop sap that etches clear coat within days if not cleaned off.</li>
+  <li><strong>Road salt from winter passes:</strong> If you drive to the mountains at all, road salt comes back on your undercarriage and will accelerate corrosion if not regularly washed.</li>
+  <li><strong>Summer UV exposure:</strong> Puget Sound summers bring real sunshine. Unprotected dark vehicles (black, red, dark blue) show oxidation quickly in direct sun.</li>
+  <li><strong>Constant moisture:</strong> Rain, humidity, and overnight dew mean your car spends most of the year damp. That environment accelerates paint degradation if there's no protective coating.</li>
+</ul>
+
+<p>Detailing every 3–6 months isn't a luxury — it's maintenance. The question is whether you handle it yourself, drop the car off, or have a professional come to you.</p>
+
+<h2>What Professional Auto Detailing Actually Includes</h2>
+
+<p>There's a spectrum. At the low end, you get a wash and vacuum for $100. At the high end, you get a full paint correction, ceramic coating application, deep interior restoration, and odor elimination for $500+. Here's what typically fits in the middle:</p>
+
+<p><strong>Premium Package (most popular):</strong></p>
+<ul>
+  <li>Exterior: foam pre-wash, hand wash, clay bar decontamination, polish to remove water spots and light oxidation, premium sealant or wax</li>
+  <li>Interior: full vacuum including under seats and mats, dashboard and vent cleaning, seat deep clean and conditioning (leather) or shampoo (fabric), interior glass, odor treatment</li>
+  <li>Time: 4–5 hours</li>
+  <li>Result: a car that looks new inside and out, with 3–6 months of paint protection</li>
+</ul>
+
+<p><strong>Elite Package (best value if you're keeping the car 2+ years):</strong></p>
+<ul>
+  <li>Includes everything in Premium, plus ceramic coating (1-year professional-grade)</li>
+  <li>Ceramic adds hydrophobic protection that lasts 12+ months and makes washes easier</li>
+  <li>Time: 5–7 hours</li>
+</ul>
+
+<p>At the upper end, there are full paint-correction and multi-year ceramic packages that run $800+, but those are for paint that's genuinely damaged or vehicles you're keeping long-term.</p>
+
+<h2>Mobile Detailing vs. Fixed Shop — Why It Matters in Sumner</h2>
+
+<p>Sumner's suburban geography makes mobile detailing practical. You have a driveway. The roads are well-maintained. There's parking. A mobile detailer can show up with a full setup — pressure washer, wet/dry vac, polisher, all the products — and work for 4–6 hours without logistical headaches.</p>
+
+<p>Compare that to a fixed shop:</p>
+
+<ul>
+  <li><strong>You have to drive there (and arrange a ride back).</strong> Consuming an hour minimum on top of the detail time.</li>
+  <li><strong>You sit in a waiting room.</strong> Most detail shops aren't set up for customer lounge comfort.</li>
+  <li><strong>You drive back to pick it up.</strong> Another hour consumed.</li>
+  <li><strong>Rush? The shop still can't start faster.</strong> You're in a queue with everyone else.</li>
+</ul>
+
+<p>Mobile detailing eliminates all of that. You book a 4-hour window, do whatever you want (work from home, run errands, stay inside), and the car is done when you come back. It's luxurious in the plainest sense of the word — convenience.</p>
+
+<h2>How to Choose the Right Detail for Your Car</h2>
+
+<p><strong>If your car is reasonably clean and well-maintained:</strong> Essential package — basic exterior wash, wax, tire shine, interior vacuum and wipe. Good for quarterly upkeep. Budget $120–$180.</p>
+
+<p><strong>If you want a real reset or it's been 6+ months:</strong> Premium package. Includes clay bar, polish, sealant, interior deep clean. Gets the car back to "almost new." Budget $250–$350.</p>
+
+<p><strong>If you're keeping the car 2+ more years:</strong> Elite package with ceramic coating. The ceramic protection pays for itself by reducing maintenance needs and keeping the paint safer longer. Budget $400–$550.</p>
+
+<p><strong>If you're prepping to sell:</strong> Pre-Sale package. Focused on exterior shine and interior freshness to maximize curb appeal. Often worth $500+ in sale price lift, costs $300–$400 in detail.</p>
+
+<h2>What to Expect From the Appointment</h2>
+
+<p>When you book with Crisp Auto Detailers in Sumner:</p>
+
+<ol>
+  <li><strong>You choose your date and time.</strong> We ask for a 4–6 hour window depending on package.</li>
+  <li><strong>We arrive with everything.</strong> Equipment, products, towels — you don't prep or provide anything.</li>
+  <li><strong>We work while you go about your day.</strong> Work from home, run errands, take a nap — your choice.</li>
+  <li><strong>We do a walkthrough when done.</strong> We show you the results and ask if anything needs another pass. We don't leave until you're happy.</li>
+  <li><strong>We clean up after ourselves.</strong> No mess, no hose running all day. We leave your driveway the way we found it.</li>
+</ol>
+
+<p>Mobile detailing is a completely different experience from dropping a car off at a shop. Most people who try it don't go back to the traditional model.</p>
+
+<h2>Serving Sumner and Pierce County</h2>
+
+<p>Crisp Auto Detailers is based in Puyallup and serves Sumner, South Hill, Orting, Edgewood, Auburn, Tacoma, and surrounding Pierce County communities. We're a family-run operation — the same crew every time, committed to consistent quality and building relationships with customers who care about their vehicles.</p>
+
+<p>First-time customers get $20 off a full detail. Ready to schedule? Call <strong>(253) 970-0858</strong> or visit our booking page.</p>
+`,
+  },
+
   // ── SEED BATCH: July 10, 2026 ─────────────────────────────────────────────
 
   {
