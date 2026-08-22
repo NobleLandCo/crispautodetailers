@@ -13,6 +13,115 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 
+  // ── August 22, 2026 ────────────────────────────────────────────────────────
+
+  {
+    slug: "mobile-car-detailing-orting-wa",
+    title: "Mobile Car Detailing in Orting, WA — Professional Auto Detailers Come to You",
+    metaTitle: "Mobile Car Detailing Orting WA | Professional Detailers",
+    metaDescription: "Mobile car detailing in Orting, WA. We bring professional detailing to your home or office. Paint protection, ceramic coating, and interior cleaning. Call (253) 970-0858.",
+    date: "2026-08-22",
+    category: "Services",
+    excerpt: "Tired of dropping your car off for hours? Mobile car detailing in Orting brings professional service directly to your driveway — no waiting, no hassle, full results.",
+    readingTime: "6 min read",
+    primaryKeyword: "mobile car detailing Orting WA",
+    content: `
+<h1>Mobile Car Detailing in Orting, WA — Professional Auto Detailers Come to You</h1>
+
+<p>Orting sits between Puyallup and Olympia with a mix of working families, retirees, and outdoor enthusiasts — people who care about their trucks, SUVs, and daily drivers but don't have hours to waste on a trip to a detail shop across town. If you've been thinking about getting your vehicle professionally detailed but dreading the drop-off experience, mobile car detailing changes the equation entirely.</p>
+
+<p>A professional detailer comes to your home or office in Orting, brings all the equipment and products, does the full job while you work or relax, and leaves you with a car that looks and smells new. No drive, no waiting, no guessing about the result — you see it yourself.</p>
+
+<h2>Why Orting Is Perfect for Mobile Detailing</h2>
+
+<p>Orting's geography actually works in favor of mobile service. Most residential areas have driveways, reasonable road access, and the kind of parking setup that lets a professional detailer park, set up, and work for 4–6 hours without logistics headaches. Unlike downtown areas where space is tight, you have room for the equipment and the time to do the job right.</p>
+
+<p>The vehicles around Orting also tend toward trucks, SUVs, and larger rigs — Tacomas, F-150s, Forerunners, pickup trucks used for work or weekend adventures. Larger vehicles cost more and take longer at a fixed detail shop, and drop-off becomes a genuine inconvenience. Mobile detailing at your driveway is nearly always the faster, simpler option.</p>
+
+<h2>What Professional Mobile Detailing Includes</h2>
+
+<p>The baseline service — what separates a professional detail from a car wash — includes:</p>
+
+<p><strong>Exterior:</strong></p>
+<ul>
+  <li>Foam pre-wash to remove loose dirt without contact</li>
+  <li>Hand wash with microfiber and professional soap</li>
+  <li>Clay bar decontamination to remove bonded contaminants (sap, rail dust, industrial fallout)</li>
+  <li>Polish or sealant to restore shine and provide 3–6 months of protection</li>
+  <li>Tire shine and wheel detail</li>
+</ul>
+
+<p><strong>Interior:</strong></p>
+<ul>
+  <li>Full vacuum including under seats, trunk, and mats</li>
+  <li>Dashboard and vent cleaning</li>
+  <li>Seat cleaning (shampoo for cloth, conditioning for leather)</li>
+  <li>Interior glass</li>
+  <li>Odor treatment if needed</li>
+</ul>
+
+<p>A quality detail doesn't rush. That's why it takes 4–5 hours for a full treatment. Shops that promise "full details" in 2 hours are skipping steps or cutting corners — often the clay bar and interior shampoo, which are the most time-intensive and effective parts of the job.</p>
+
+<h2>Pacific Northwest Climate and Your Paint</h2>
+
+<p>Orting's climate — wet winters, humid springs, UV exposure in summer — is actively degrading your car's paint if there's no protection on it. The clear coat oxidizes, contaminants bond to the surface, and what looked fine in the driveway becomes noticeably dull within 6 months if left unprotected.</p>
+
+<p>Regular detailing isn't a luxury in Western Washington. It's maintenance. A car detailed every 3–4 months keeps the clear coat protected and the interior from developing that slow-degradation smell that becomes permanent if neglected too long.</p>
+
+<h2>Detailing vs. Regular Washes</h2>
+
+<p>A quick wash at a drive-through or with a garden hose at home removes surface dirt. It doesn't clean the car. Detailing removes the contaminants that regular washing misses — tree sap, rail dust, brake dust bonded to wheels, oxidation on the paint, buildup in seat seams, mold spores in the cabin air filter.</p>
+
+<p>That difference compounds. A car that's washed frequently but never detailed will look progressively dirtier and smell worse, even with high-frequency washing. A car that's detailed twice a year and washed monthly stays cleaner longer, smells better, and the paint lasts longer under protection.</p>
+
+<h2>Ceramic Coating — Worth the Investment</h2>
+
+<p>Most Orting drivers we detail ask about ceramic coating. The honest answer: if you're keeping your vehicle 2+ more years, ceramic coating is worth it. A professional ceramic coat lasts 1–2 years and gives you:</p>
+
+<ul>
+  <li>Hydrophobic paint that beads water and sheds dirt naturally</li>
+  <li>UV protection against oxidation</li>
+  <li>Chemical resistance against sap, bird droppings, and road contamination</li>
+  <li>Fewer washes needed — the coating handles the work, not your elbow grease</li>
+</ul>
+
+<p>The upfront cost is higher than wax ($300–$400 for application), but it pays for itself within a year or two compared to repeated wax applications, professional washes, and extra maintenance. If the car is staying, ceramic is the math winner.</p>
+
+<h2>How the Mobile Appointment Works</h2>
+
+<p>When you book mobile detailing with Crisp Auto Detailers:</p>
+
+<ol>
+  <li><strong>You pick a date and time.</strong> We ask for a 4–6 hour window depending on package size and vehicle condition.</li>
+  <li><strong>We show up fully equipped.</strong> Pressure washer, foam cannon, polisher, clay bar, all products, towels, everything.</li>
+  <li><strong>We work while you do your thing.</strong> Work from home, run errands, stay inside — entirely your choice.</li>
+  <li><strong>We do a walkthrough when we're done.</strong> Point out anything you want us to touch up. We don't leave until it's right.</li>
+  <li><strong>We clean up after ourselves.</strong> No mess, no hose running all day in your driveway. We leave it the way we found it.</li>
+</ol>
+
+<p>That's genuinely different from traditional detail shops. Most people who try mobile detailing don't go back to the drop-off model.</p>
+
+<h2>Pricing and Packages</h2>
+
+<p>Pricing varies by package and vehicle size. A rough guide:</p>
+
+<ul>
+  <li><strong>Essential:</strong> Exterior wash, clay bar, sealant, tire shine, interior vacuum and wipe. $120–$180.</li>
+  <li><strong>Premium:</strong> Adds interior shampoo, deep dashboard clean, odor treatment, leather conditioning. $250–$350.</li>
+  <li><strong>Elite:</strong> Includes ceramic coating for paint protection. $400–$550.</li>
+  <li><strong>Pre-Sale:</strong> Focused on curb appeal for listing. $300–$400.</li>
+</ul>
+
+<p>Larger vehicles (trucks, SUVs) typically run toward the higher end. The most common mistake is under-packaging — booking an exterior-only detail and then wondering why the interior still needs work. Commit to a full detail every 4–6 months and the results compound.</p>
+
+<h2>Serving Orting and South Pierce County</h2>
+
+<p>Crisp Auto Detailers is based in Puyallup and serves Orting, Sumner, Edgewood, South Hill, Auburn, Tacoma, and the broader Pierce County area. We're family-run — not a franchise, not a rotating crew. When you book with Crisp, you know who's showing up and what to expect.</p>
+
+<p>First-time customers in Orting get $20 off a full detail. Ready to schedule? Call <strong>(253) 970-0858</strong> or use our online booking form. We'll find a time that works for your schedule and bring professional detailing straight to your driveway.</p>
+`,
+  },
+
   // ── July 11, 2026 ─────────────────────────────────────────────────────────
 
   {
