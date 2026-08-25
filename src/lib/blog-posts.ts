@@ -13,6 +13,123 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 
+  // ── August 25, 2026 ────────────────────────────────────────────────────────
+
+  {
+    slug: "car-detailing-edgewood-wa",
+    title: "Car Detailing in Edgewood, WA — Why Mobile Service Makes Sense Here",
+    metaTitle: "Car Detailing Edgewood WA | Mobile Auto Detailers",
+    metaDescription: "Professional car detailing in Edgewood, WA. Mobile service comes to your driveway. Paint protection, ceramic coating, interior cleaning. Call (253) 970-0858.",
+    date: "2026-08-25",
+    category: "Services",
+    excerpt: "Edgewood drivers deserve car detailing that doesn't require a trip across town. Mobile detailing brings professional service straight to your driveway.",
+    readingTime: "6 min read",
+    primaryKeyword: "car detailing Edgewood WA",
+    content: `
+<h1>Car Detailing in Edgewood, WA — Why Mobile Service Makes Sense Here</h1>
+
+<p>Edgewood is a quiet, established community between Tacoma and Puyallup — mixed with working families, longer-term residents, and people who actually care about their vehicles. If you're looking for car detailing in Edgewood, the good news is you have options. The better news is that mobile detailing has become the default choice for Edgewood drivers, and there are solid reasons why.</p>
+
+<p>A mobile detailer comes to your driveway, does the complete job while you're inside or running errands, and you never have to leave home. For a working person in Pierce County, it's the obvious upgrade from the traditional drop-off model.</p>
+
+<h2>Edgewood's Geography Makes Mobile Detailing Practical</h2>
+
+<p>Edgewood has a lot of what makes mobile service actually work. Homes have driveways or off-street parking. Roads are well-maintained. There's space to work without logistics headaches. Compare that to downtown areas where a mobile detailer might be stuck in a tight parking lot or fighting street parking — Edgewood is actually ideal for this model.</p>
+
+<p>The vehicle types here also favor mobile service. You see a lot of trucks, full-size SUVs, and older vehicles that people actually use — not show cars. Larger vehicles cost more and take longer at a fixed shop. Mobile detailing at your driveway is often the faster and more cost-effective option for work vehicles and family rigs.</p>
+
+<h2>Western Washington's Climate is Tougher on Paint Than You Think</h2>
+
+<p>Edgewood sits in the Puget Sound region, which means the weather patterns are consistent: rain 6+ months of the year, humidity even in summer, and real UV exposure when the sun shows up. That combination degrades unprotected paint faster than most climates.</p>
+
+<p>Specific threats to your car's finish:</p>
+
+<ul>
+  <li><strong>Tree sap and pollen:</strong> Edgewood has Douglas firs, maples, and birches that drop sap and pollen spring through early summer. Sap hardens on paint within hours in warm weather and begins etching the clear coat if not removed.</li>
+  <li><strong>Road grime and film:</strong> Western WA roads accumulate mineral-heavy water, oil residue, and exhaust particulates. That film bonds to unprotected paint over weeks.</li>
+  <li><strong>Seasonal UV damage:</strong> Summer sun is real in Puget Sound. Dark vehicles (black, deep red, dark blue) show oxidation within 6 months if there's no protective coating.</li>
+  <li><strong>Winter moisture damage:</strong> Constant wet conditions mean your car spends most of the year damp. That environment accelerates clear coat degradation without regular protection.</li>
+</ul>
+
+<p>Detailing every 3–4 months isn't a luxury in this climate — it's maintenance. Your car's finish is actively being attacked by the environment, and regular cleaning and protection is the only defense.</p>
+
+<h2>What Full Car Detailing Actually Includes</h2>
+
+<p>There's often confusion about what "detailing" means. Here's the breakdown:</p>
+
+<p><strong>Basic package:</strong> Exterior foam wash, dry, basic interior vacuum, tire shine. 1–2 hours. Good for quick maintenance but doesn't address wear or damage.</p>
+
+<p><strong>Premium package (most popular):</strong></p>
+<ul>
+  <li>Exterior: foam pre-wash, hand wash with microfiber and professional soap, clay bar decontamination, polish to remove water spots and light oxidation, professional sealant or wax</li>
+  <li>Interior: full vacuum including under seats and mats, dashboard and vent cleaning with detail brush, seat cleaning (shampoo for cloth, conditioning for leather), interior glass, odor treatment</li>
+  <li>Time: 4–5 hours depending on vehicle size</li>
+  <li>Result: a car that looks new inside and out, with 3–6 months of paint protection</li>
+</ul>
+
+<p><strong>Elite package (best long-term value):</strong> Includes everything in Premium plus ceramic coating application. Ceramic provides 1–2 years of hydrophobic protection that keeps your car cleaner and reduces maintenance frequency. Highly recommended if you're keeping the vehicle 2+ more years.</p>
+
+<p>The mistake most people make is booking an exterior-only detail and then wondering why the interior still needs work. The interior is half the car, and it degrades just as fast without regular cleaning.</p>
+
+<h2>Mobile Service vs. Fixed Shop — The Real Differences</h2>
+
+<p>A traditional detail shop makes sense in some cases. A mobile detailer makes more sense for Edgewood residents. Here's why:</p>
+
+<ul>
+  <li><strong>No travel time.</strong> You don't drive anywhere. The detailer comes to you.</li>
+  <li><strong>No waiting room.</strong> No sitting around for 3+ hours at a shop with questionable WiFi and old magazines.</li>
+  <li><strong>You see the work happen.</strong> You can check in, ask questions, point out problem areas in real-time.</li>
+  <li><strong>Flexible timing.</strong> Book a 4-hour window, work from home, run errands, check back when it's done.</li>
+  <li><strong>No second trip.</strong> You're already home when the detail is finished.</li>
+</ul>
+
+<p>For busy Edgewood residents, mobile service just makes more sense logistically. And the quality is the same — it's the same equipment, same products, same skill level. The only difference is the location.</p>
+
+<h2>Ceramic Coating — Is It Worth It for Edgewood Vehicles?</h2>
+
+<p>If you're keeping your vehicle more than 2 years, ceramic coating is a smart investment in this climate. Here's the math:</p>
+
+<p>A professional ceramic coat costs $150–$300 applied, and lasts 12–24 months. During that time, a coated car needs fewer washes, stays cleaner longer, and the paint is protected against tree sap, UV, and road chemicals that would otherwise etch an unprotected finish.</p>
+
+<p>Compared to repeated wax applications every 4–8 weeks plus professional washes to keep the car looking good, ceramic coating breaks even within a year. After that, it's genuinely cheaper to maintain.</p>
+
+<p>For a car you're selling or trading in soon, ceramic doesn't make financial sense. For a vehicle staying in the driveway, it's worth the upfront cost.</p>
+
+<h2>How a Mobile Appointment Actually Works</h2>
+
+<p>When you book with Crisp Auto Detailers in Edgewood:</p>
+
+<ol>
+  <li><strong>Pick your date and time.</strong> We ask for a 4–6 hour window depending on package and vehicle size.</li>
+  <li><strong>We arrive fully equipped.</strong> Pressure washer, foam cannon, polisher, clay bar, all products, towels — everything comes with us.</li>
+  <li><strong>We work while you handle your day.</strong> Work from home, run errands to town, stay inside — totally up to you.</li>
+  <li><strong>Walkthrough when we're done.</strong> We show you the results, ask if anything needs another pass, and don't leave until you're satisfied.</li>
+  <li><strong>We clean up.</strong> No mess left behind. Your driveway looks the way it did before we arrived.</li>
+</ol>
+
+<p>Most people who try mobile detailing don't go back to the drop-off model. The convenience factor is that significant.</p>
+
+<h2>Pricing for Edgewood Car Detailing</h2>
+
+<p>Here's what you can expect to budget:</p>
+
+<ul>
+  <li><strong>Essential:</strong> Exterior wash, dry, basic interior clean, tire shine. $120–$180.</li>
+  <li><strong>Premium:</strong> Full exterior detail with clay bar and sealant, full interior deep clean with seat shampoo. $250–$350.</li>
+  <li><strong>Elite:</strong> Premium package plus ceramic coating application. $400–$550.</li>
+  <li><strong>Pre-Sale:</strong> Focused on exterior shine and interior freshness for listing. $300–$400.</li>
+</ul>
+
+<p>Larger vehicles (trucks, SUVs) run toward the higher end. The single biggest mistake customers make is under-investing in the interior — booking only exterior service and missing out on the interior transformation that comes with a proper detail.</p>
+
+<h2>Serving Edgewood and Surrounding Pierce County</h2>
+
+<p>Crisp Auto Detailers is based in Puyallup and serves Edgewood, South Hill, Sumner, Orting, Auburn, Tacoma, and the broader Pierce County area. We're a family-run operation — not a franchise, not a rotating crew of strangers. When you book with us, you know who's showing up and what to expect.</p>
+
+<p>First-time customers in Edgewood get $20 off a full detail. Ready to book? Call <strong>(253) 970-0858</strong> or use our online booking form to secure your appointment.</p>
+`,
+  },
+
   // ── August 22, 2026 ────────────────────────────────────────────────────────
 
   {
