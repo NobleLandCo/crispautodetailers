@@ -13,6 +13,108 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 
+  // ── August 26, 2026 ────────────────────────────────────────────────────────
+
+  {
+    slug: "paint-correction-vs-polishing",
+    title: "Paint Correction vs. Polishing — What Your Car Actually Needs",
+    metaTitle: "Paint Correction vs Polishing | Professional Detailing",
+    metaDescription: "Paint correction vs polishing: what's the difference and which does your car need? Professional detailer explains both processes and when to use each.",
+    date: "2026-08-26",
+    category: "Paint Protection",
+    excerpt: "Paint correction and polishing sound like the same thing, but they're different tools for different problems. Here's how to know which your car actually needs.",
+    readingTime: "7 min read",
+    primaryKeyword: "paint correction vs polishing",
+    content: `
+<h1>Paint Correction vs. Polishing — What Your Car Actually Needs</h1>
+
+<p>When a car's paint starts looking dull, faded, or scratched, the automatic response is "it needs to be polished." But polishing isn't always the answer — and sometimes it's not enough. Paint correction and polishing are related processes that sound similar and often get confused, but they're solving for different problems.</p>
+
+<p>Here's the difference, and how to know which one your car actually needs.</p>
+
+<h2>What Polishing Actually Does</h2>
+
+<p>Polishing is a finishing process. It uses fine abrasives and a dual-action orbital polisher to remove the very outer layer of clear coat, filling in microscopic surface imperfections and oxidation. The result is a car that looks glossier, reflects light more evenly, and has a uniform color across the panel.</p>
+
+<p>Polishing works best for:</p>
+
+<ul>
+  <li><strong>Light oxidation:</strong> The dull gray or chalky appearance that builds up on unprotected paint over months or years of UV exposure.</li>
+  <li><strong>Swirl marks:</strong> Fine scratches caused by improper washing technique (circular motions with a sponge, especially on dark paint).</li>
+  <li><strong>Water spots:</strong> The mineral deposits left behind by rainwater or sprinklers that etch into the clear coat.</li>
+  <li><strong>Light contamination:</strong> Surface grime and film that makes the paint look hazed or filmy.</li>
+</ul>
+
+<p>The process is straightforward: a detailer uses a cutting compound (fine abrasive) on a polisher, works systematically across the vehicle, and then removes any polish residue with a microfiber towel. On a well-maintained vehicle, polishing takes 2–3 hours for the exterior.</p>
+
+<p>The catch: polishing is temporary. It removes a microscopic layer of clear coat to improve appearance, which means you can't polish the same car every month forever. Eventually, you'd remove enough clear coat to expose the color coat underneath, and that's a paint job — not a detail.</p>
+
+<h2>What Paint Correction Actually Does</h2>
+
+<p>Paint correction sounds like a heavier lift because it is. Paint correction targets damage that's more permanent — scratches, gouges, paint overspray, clear coat separation — damage that just polishing won't fix.</p>
+
+<p>Paint correction uses a more aggressive abrasive compound on a dual-action polisher, often in multiple passes with different grits (coarse, medium, fine) to systematically level the surface and remove scratches or damaged clear coat layer. The goal is to make the damage invisible by removing enough surface to smooth it out entirely.</p>
+
+<p>The problem is that paint correction requires removing more clear coat than polishing does. You can't do a full paint correction every quarter — you'll run out of clear coat. Paint correction is a renewal, not a routine maintenance step.</p>
+
+<p>Paint correction is needed for:</p>
+
+<ul>
+  <li><strong>Moderate to heavy scratches:</strong> Damage that goes beyond the ultra-surface layer and actually catches your fingernail.</li>
+  <li><strong>Deep swirl marks:</strong> Aggressive washing, automatic car washes, or someone washing the car incorrectly has created visible scratches across the entire panel.</li>
+  <li><strong>Paint overspray:</strong> Overspray from nearby construction, body shop work, or fence painting that's dried on the clear coat.</li>
+  <li><strong>Clear coat failure:</strong> Areas where the clear coat is peeling, separating from the base coat, or has lost adhesion.</li>
+  <li><strong>Rust spotting or bird damage etching:</strong> Damage that's sunk into the clear coat and won't come off with compound alone.</li>
+</ul>
+
+<h2>How to Know Which One Your Car Needs</h2>
+
+<p><strong>Look at the scratch or damage under bright light.</strong> Angle the panel toward the sun or a work light. Does the damage vanish when the light hits it a certain way, or is it still visible from every angle?</p>
+
+<p>If the damage disappears with certain lighting angles, it's likely swirl marks or surface oxidation — polishing will handle it. If it's visible from every angle and you can catch it with your fingernail, it's deeper. That's paint correction territory.</p>
+
+<p><strong>Run your hand across it (gently).</strong> Your fingernail can't feel the difference, but you can. If your hand catches anything or the surface feels gouged, that's damage that polishing alone won't fully address.</p>
+
+<p><strong>Consider the history.</strong> A car that's been through automatic car washes regularly, or someone washed it with a sponge and circular motions, likely has fine scratches everywhere — that's polishing territory. A car that hit a low branch, had overspray from nearby work, or has a clear coat separation issue needs correction.</p>
+
+<h2>The Pacific Northwest Context</h2>
+
+<p>Western Washington weather creates specific paint challenges. The constant rain keeps cars wet and exposed to moisture, which accelerates clear coat degradation. The seasonal UV exposure in summer oxidizes unprotected paint fast. And tree pollen, sap, and mineral-heavy rainwater create buildup that looks like haze on the surface.</p>
+
+<p>Most PNW vehicles benefit from a polish every 2–3 years. A more aggressive paint correction is necessary less often — typically only if the car has been neglected or there's specific damage to address.</p>
+
+<p>A car that's detailed regularly, waxed or ceramic-coated, and not run through automatic car washes will rarely need paint correction. The protection on the paint does its job and keeps the clear coat from getting damaged in the first place.</p>
+
+<h2>The Real Cost Difference</h2>
+
+<p><strong>Polishing:</strong> As part of a regular detail, polishing adds $75–$150 to the cost depending on vehicle size. Standalone polishing runs $150–$250. Time: 2–3 hours.</p>
+
+<p><strong>Paint correction:</strong> A full multi-stage paint correction can run $300–$800+ depending on how much damage there is, vehicle size, and whether it's single-stage correction (one aggressive pass) or multi-stage (coarse, medium, fine passes). Time: 6–10+ hours depending on damage severity.</p>
+
+<p>The difference in cost reflects the difference in labor. Correction is slower because you're working systematically with multiple grits to achieve a specific result. Polishing is faster because you're doing a finishing pass on already-decent paint.</p>
+
+<h2>Combining Correction or Polishing With Ceramic Coating</h2>
+
+<p>If you're doing paint correction or polishing, the smart move is to follow it with ceramic coating. You've just spent time and money restoring the paint to look its best — why not protect it for 1–2 years with ceramic?</p>
+
+<p>A polished surface is ideal for ceramic application. The paint is clean, contaminant-free, and the ceramic bonds perfectly to the cleared surface. That combination (polish + ceramic) is one of the best value choices for a vehicle that's been somewhat neglected but is otherwise solid.</p>
+
+<h2>How Often Should You Actually Do This?</h2>
+
+<p><strong>Polishing:</strong> Once every 2–3 years if the car is well-maintained and waxed or coated. If you're not using any protection (wax or ceramic), polishing annually keeps the shine fresh.</p>
+
+<p><strong>Paint correction:</strong> Once when you reset a neglected car, then possibly again in 5–10 years depending on how well you maintain the paint after correction.</p>
+
+<p>The goal is to police the paint, not to live in a cycle of correction. A car that's detailed regularly, protected with wax or ceramic, and not run through harsh automatic car washes will stay looking better longer than a car that relies on occasional deep correction without any maintenance in between.</p>
+
+<h2>Serving Tacoma and Pierce County</h2>
+
+<p>Crisp Auto Detailers can assess your paint and recommend whether polishing or paint correction is the right move for your vehicle. We serve Tacoma, Puyallup, South Hill, Sumner, Orting, Edgewood, Auburn, and surrounding Pierce County areas with mobile detailing and paint protection services.</p>
+
+<p>Unsure which your car needs? Call <strong>(253) 970-0858</strong> to discuss. We'll ask a few questions about the car's history and condition, and recommend the approach that makes sense for your vehicle and budget.</p>
+`,
+  },
+
   // ── August 25, 2026 ────────────────────────────────────────────────────────
 
   {
