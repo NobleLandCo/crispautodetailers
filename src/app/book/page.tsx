@@ -84,7 +84,7 @@ export default function BookPage() {
 
         <p style={{ fontSize: '1.1rem', color: '#b0c4d8', maxWidth: '560px', margin: '0 auto 16px', lineHeight: 1.65 }}>
           Professional mobile detailing serving Puyallup, South Hill, Sumner,
-          Orting &amp; Edgewood. No drop-off. We bring all our own equipment to you.
+          Orting &amp; Edgewood. We come to you.
         </p>
 
         {/* Stars — no review count */}
