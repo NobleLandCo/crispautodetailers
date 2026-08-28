@@ -13,6 +13,7 @@ const BLUE = '#1BBDD4'
 const NAVY = '#0D1B2A'
 const NAVY_DARK = '#071018'
 const ORANGE = '#F59E0B'
+const SCRIPT = "'Dancing Script', cursive"
 
 const reviews = [
   { text: "They came out to my office parking lot. Couldn't have been easier.", author: 'Rachel W., South Hill' },
@@ -68,13 +69,25 @@ export default function BookPage() {
 
       {/* HERO */}
       <section style={{
-        background: `linear-gradient(to bottom, ${NAVY_DARK} 0%, ${NAVY} 100%)`,
+        position: 'relative',
         padding: '64px 24px 52px',
         textAlign: 'center',
         borderBottom: `3px solid ${BLUE}`,
+        overflow: 'hidden',
       }}>
-        <p style={{ color: BLUE, fontSize: '0.8rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '18px', fontWeight: 700 }}>
+        {/* Hero background image */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <Image src="/lp-orange-truck.jpg" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center 40%' }} priority />
+          <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to bottom, rgba(7,16,24,0.82) 0%, rgba(13,27,42,0.88) 100%)` }} />
+        </div>
+        <div style={{ position: 'relative', zIndex: 1 }}>
+        <p style={{ color: BLUE, fontSize: '0.8rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '14px', fontWeight: 700 }}>
           Mobile Detailing · Puyallup &amp; Pierce County
+        </p>
+
+        {/* Script tagline */}
+        <p style={{ fontFamily: SCRIPT, fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', color: ORANGE, marginBottom: '16px', lineHeight: 1.2 }}>
+          Keep It Crisp.
         </p>
 
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.4rem)', fontWeight: 900, lineHeight: 1.15, marginBottom: '18px', letterSpacing: '-0.5px' }}>
@@ -108,6 +121,7 @@ export default function BookPage() {
         <p style={{ color: '#5a7a95', fontSize: '0.82rem', marginTop: '14px' }}>
           Mon–Sat 8am–6pm · 2-minute quote · No commitment
         </p>
+        </div>
       </section>
 
       {/* TRUST BAR */}
@@ -122,6 +136,29 @@ export default function BookPage() {
           <span key={item} style={{ color: '#b0c4d8', fontSize: '0.85rem', fontWeight: 600, whiteSpace: 'nowrap' }}>{item}</span>
         ))}
       </div>
+
+      {/* REVIEWS — moved up for early social proof */}
+      <section style={{ padding: '60px 24px' }}>
+        <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+          <h2 style={{ textAlign: 'center', fontSize: '1.75rem', fontWeight: 900, marginBottom: '8px' }}>What Customers Say</h2>
+          <p style={{ textAlign: 'center', color: ORANGE, fontSize: '1.1rem', marginBottom: '32px' }}>★★★★★</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+            {reviews.map((r, i) => (
+              <div key={i} style={{
+                background: 'rgba(27,189,212,0.06)',
+                border: '1px solid rgba(27,189,212,0.15)',
+                borderRadius: '12px', padding: '24px',
+              }}>
+                <div style={{ color: ORANGE, fontSize: '0.95rem', marginBottom: '12px' }}>★★★★★</div>
+                <p style={{ color: '#c8dce8', fontSize: '0.9rem', lineHeight: 1.65, marginBottom: '14px' }}>
+                  &ldquo;{r.text}&rdquo;
+                </p>
+                <p style={{ color: BLUE, fontSize: '0.82rem', fontWeight: 700 }}>— {r.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* PHOTO GALLERY — hero shot full width, then grid */}
       <section style={{ padding: '60px 24px', maxWidth: '960px', margin: '0 auto' }}>
@@ -236,29 +273,6 @@ export default function BookPage() {
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <section style={{ padding: '60px 24px' }}>
-        <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '1.75rem', fontWeight: 900, marginBottom: '8px' }}>What Customers Say</h2>
-          <p style={{ textAlign: 'center', color: ORANGE, fontSize: '1.1rem', marginBottom: '32px' }}>★★★★★</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
-            {reviews.map((r, i) => (
-              <div key={i} style={{
-                background: 'rgba(27,189,212,0.06)',
-                border: '1px solid rgba(27,189,212,0.15)',
-                borderRadius: '12px', padding: '24px',
-              }}>
-                <div style={{ color: ORANGE, fontSize: '0.95rem', marginBottom: '12px' }}>★★★★★</div>
-                <p style={{ color: '#c8dce8', fontSize: '0.9rem', lineHeight: 1.65, marginBottom: '14px' }}>
-                  &ldquo;{r.text}&rdquo;
-                </p>
-                <p style={{ color: BLUE, fontSize: '0.82rem', fontWeight: 700 }}>— {r.author}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section style={{ background: NAVY_DARK, borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)', padding: '60px 24px' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -288,7 +302,7 @@ export default function BookPage() {
 
       {/* BOTTOM CTA */}
       <section style={{ background: NAVY_DARK, borderTop: `3px solid ${BLUE}`, padding: '60px 24px 100px', textAlign: 'center' }}>
-        <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', fontWeight: 900, marginBottom: '12px' }}>Ready for a Crisp Car?</h2>
+        <h2 style={{ fontFamily: SCRIPT, fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 700, marginBottom: '12px', color: ORANGE }}>Ready for a Crisp Car?</h2>
         <p style={{ color: '#7a9ab5', marginBottom: '30px', fontSize: '1rem' }}>Call now for a fast, no-pressure quote.</p>
         <a href={PHONE_HREF} style={{
           display: 'inline-block', background: BLUE, color: NAVY,
