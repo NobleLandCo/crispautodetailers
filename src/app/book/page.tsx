@@ -20,14 +20,14 @@ const reviews = [
   { text: 'Showed up on time, did an incredible job on my Tacoma. Will definitely book again.', author: 'Mike T., Puyallup' },
 ]
 
-// Photos already in /public — sorted: hero shots first, then before/afters
+// Photos from Josh
 const galleryPhotos = [
-  { src: '/hero-exterior-detail.jpg', alt: 'Exterior detail result — Crisp Auto Detailers' },
-  { src: '/ba-raptor.jpg', alt: 'Ford Raptor before and after full exterior detail' },
-  { src: '/ba-interior.jpg', alt: 'Interior before and after — deep clean and shampoo' },
-  { src: '/ba-cargo.jpg', alt: 'Cargo area before and after mobile detail' },
-  { src: '/ba-fabric-seats.jpg', alt: 'Fabric seats before and after shampoo' },
-  { src: '/ba-mats.jpg', alt: 'Floor mats before and after detail' },
+  { src: '/lp-kia-exterior.jpg', alt: 'Kia exterior after full mobile detail — Crisp Auto Detailers Puyallup' },
+  { src: '/lp-orange-truck.jpg', alt: 'Classic truck exterior detail — showroom finish' },
+  { src: '/lp-raptor-ba.jpg', alt: 'Ford Raptor exterior before and after detail' },
+  { src: '/lp-jeep-ba.jpg', alt: 'Interior before and after deep clean and shampoo' },
+  { src: '/lp-suv-cargo.jpg', alt: 'SUV cargo area after professional detail' },
+  { src: '/lp-trunk.jpg', alt: 'Trunk area after mobile detail service' },
 ]
 
 export default function BookPage() {
@@ -129,8 +129,8 @@ export default function BookPage() {
         <p style={{ textAlign: 'center', color: '#6a8aa5', marginBottom: '28px', fontSize: '0.9rem' }}>Real results from real customers in South Pierce County</p>
 
         {/* Full-width hero photo */}
-        <div style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', position: 'relative', height: '360px' }}>
-          <Image src="/hero-exterior-detail.jpg" alt="Professional exterior detail result" fill style={{ objectFit: 'cover', objectPosition: 'center' }} />
+        <div style={{ borderRadius: '12px', overflow: 'hidden', marginBottom: '12px', position: 'relative', height: '380px' }}>
+          <Image src={galleryPhotos[0].src} alt={galleryPhotos[0].alt} fill style={{ objectFit: 'cover', objectPosition: 'center' }} />
         </div>
 
         {/* 2x2 grid */}
@@ -143,8 +143,8 @@ export default function BookPage() {
         </div>
 
         {/* Last photo full width */}
-        <div style={{ borderRadius: '10px', overflow: 'hidden', position: 'relative', height: '240px' }}>
-          <Image src="/ba-mats.jpg" alt="Floor mats before and after detail" fill style={{ objectFit: 'cover', objectPosition: 'center top' }} />
+        <div style={{ borderRadius: '10px', overflow: 'hidden', position: 'relative', height: '260px' }}>
+          <Image src={galleryPhotos[5].src} alt={galleryPhotos[5].alt} fill style={{ objectFit: 'cover', objectPosition: 'center' }} />
         </div>
       </section>
 
