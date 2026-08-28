@@ -81,23 +81,13 @@ export default function BookPage() {
           <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to bottom, rgba(7,16,24,0.82) 0%, rgba(13,27,42,0.88) 100%)` }} />
         </div>
         <div style={{ position: 'relative', zIndex: 1 }}>
-        <p style={{ color: BLUE, fontSize: '0.8rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '14px', fontWeight: 700 }}>
-          Mobile Detailing · Puyallup &amp; Pierce County
-        </p>
-
-        {/* Script tagline */}
-        <p style={{ fontFamily: SCRIPT, fontSize: 'clamp(1.6rem, 4vw, 2.4rem)', color: ORANGE, marginBottom: '16px', lineHeight: 1.2 }}>
-          Keep It Crisp.
-        </p>
-
-        <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.4rem)', fontWeight: 900, lineHeight: 1.15, marginBottom: '18px', letterSpacing: '-0.5px' }}>
-          We Come to Your Driveway.<br />
-          <span style={{ color: BLUE }}>You Don&apos;t Lift a Finger.</span>
+        <h1 style={{ marginBottom: '16px' }}>
+          <span style={{ display: 'block', fontSize: 'clamp(2rem, 5vw, 3.4rem)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.15 }}>MOBILE DETAILING</span>
+          <span style={{ display: 'block', fontFamily: SCRIPT, fontSize: 'clamp(2.2rem, 6vw, 4rem)', color: BLUE, lineHeight: 1.2 }}>We come to you!</span>
         </h1>
 
-        <p style={{ fontSize: '1.1rem', color: '#b0c4d8', maxWidth: '560px', margin: '0 auto 16px', lineHeight: 1.65 }}>
-          Professional mobile detailing serving Puyallup, South Hill, Sumner,
-          Orting &amp; Edgewood. We come to you.
+        <p style={{ color: '#b0c4d8', fontSize: '0.85rem', letterSpacing: '2px', marginBottom: '16px' }}>
+          Puyallup · South Hill · Sumner · Orting · Edgewood · Pierce County
         </p>
 
         {/* Stars — no review count */}
