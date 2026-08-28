@@ -264,7 +264,7 @@ export default function BookPage() {
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <h2 style={{ textAlign: 'center', fontSize: '1.75rem', fontWeight: 900, marginBottom: '40px' }}>Quick Answers</h2>
           {[
-            { q: 'Do you need water or power at my location?', a: "No. We carry our own water tank and power everything ourselves. We just need access to your vehicle." },
+            { q: 'Do I need to be home while you work?', a: "Nope. As long as we have access to the vehicle, you can go about your day. Most customers just leave us the keys and come back to a clean car." },
             { q: 'How long does a detail take?', a: "Essential: 2–3 hrs. Premium: 3–4 hrs. Elite and Signature: 5–6 hrs. We'll confirm when you call." },
             { q: 'Can I get same-day or next-day service?', a: "Often yes. Call and we'll check availability in real time. Weekends book fast." },
             { q: 'What payment do you accept?', a: "Cash, card, Venmo, or Zelle. You pay when the job is done and you're happy with it." },
