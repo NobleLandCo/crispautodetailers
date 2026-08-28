@@ -170,7 +170,7 @@ export default function BookPage() {
               includes: ['Everything in Premium', 'Clay bar decontamination', 'Leather conditioning', 'Odor elimination', '12-month ceramic sealant'],
             },
             {
-              name: 'Signature', price: '$450 / $490 / $530', badge: 'PRE-SALE',
+              name: 'Pre-Sale Detail', price: '$450 / $490 / $530', badge: 'PRE-SALE',
               includes: ['Full Elite package', 'Engine bay detail', 'Black trim restoration', 'Exhaust tip polish', 'Glass ceramic coating'],
             },
           ].map(pkg => (
