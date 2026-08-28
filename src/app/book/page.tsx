@@ -124,6 +124,11 @@ export default function BookPage() {
         </div>
       </section>
 
+      {/* PROMO BANNER */}
+      <div style={{ textAlign: 'center', fontSize: '0.9rem', fontWeight: 700, padding: '12px 24px', letterSpacing: '1px', background: ORANGE, color: '#fff' }}>
+        ★ NEW CUSTOMER OFFER: $20 OFF YOUR FIRST FULL DETAIL ★
+      </div>
+
       {/* TRUST BAR */}
       <div style={{
         background: NAVY_DARK,
