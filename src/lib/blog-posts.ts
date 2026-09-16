@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If your car has heavy pet hair that's been accumulating for months, or if you've tried DIY removal and the hair is still embedded, a professional detail is the efficient solution. A mobile detailer with wet/dry vac, carpet extraction equipment, and odor treatment can get your interior completely clean in 3–4 hours — way faster than DIY struggling for days.</p>
 
-<p>Crisp Auto Detailers serves Pierce County (Puyallup, South Hill, Sumner, Orting, Edgewood, Auburn, Tacoma) with specialized pet hair and odor removal. If your car smells like dog or cat, we can reset it completely. Call <strong>(253) 970-0858</strong> to book a pet-focused interior detail.</p>
+<p>Crisp Auto Detailers serves Pierce County (Puyallup, South Hill, Sumner, Orting, Edgewood, Auburn, Tacoma) with specialized pet hair and odor removal. If your car smells like dog or cat, we can reset it completely. Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> to book a pet-focused interior detail.</p>
 `,
   },
 
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers can assess your paint and recommend whether polishing or paint correction is the right move for your vehicle. We serve Tacoma, Puyallup, South Hill, Sumner, Orting, Edgewood, Auburn, and surrounding Pierce County areas with mobile detailing and paint protection services.</p>
 
-<p>Unsure which your car needs? Call <strong>(253) 970-0858</strong> to discuss. We'll ask a few questions about the car's history and condition, and recommend the approach that makes sense for your vehicle and budget.</p>
+<p>Unsure which your car needs? Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> to discuss. We'll ask a few questions about the car's history and condition, and recommend the approach that makes sense for your vehicle and budget.</p>
 `,
   },
 
@@ -345,7 +345,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers is based in Puyallup and serves Edgewood, South Hill, Sumner, Orting, Auburn, Tacoma, and the broader Pierce County area. We're a family-run operation — not a franchise, not a rotating crew of strangers. When you book with us, you know who's showing up and what to expect.</p>
 
-<p>First-time customers in Edgewood get $20 off a full detail. Ready to book? Call <strong>(253) 970-0858</strong> or use our online booking form to secure your appointment.</p>
+<p>First-time customers in Edgewood get $20 off a full detail. Ready to book? Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> or use our online booking form to secure your appointment.</p>
 `,
   },
 
@@ -454,7 +454,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers is based in Puyallup and serves Orting, Sumner, Edgewood, South Hill, Auburn, Tacoma, and the broader Pierce County area. We're family-run — not a franchise, not a rotating crew. When you book with Crisp, you know who's showing up and what to expect.</p>
 
-<p>First-time customers in Orting get $20 off a full detail. Ready to schedule? Call <strong>(253) 970-0858</strong> or use our online booking form. We'll find a time that works for your schedule and bring professional detailing straight to your driveway.</p>
+<p>First-time customers in Orting get $20 off a full detail. Ready to schedule? Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> or use our online booking form. We'll find a time that works for your schedule and bring professional detailing straight to your driveway.</p>
 `,
   },
 
@@ -556,7 +556,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers is based in Puyallup and serves Sumner, South Hill, Orting, Edgewood, Auburn, Tacoma, and surrounding Pierce County communities. We're a family-run operation — the same crew every time, committed to consistent quality and building relationships with customers who care about their vehicles.</p>
 
-<p>First-time customers get $20 off a full detail. Ready to schedule? Call <strong>(253) 970-0858</strong> or visit our booking page.</p>
+<p>First-time customers get $20 off a full detail. Ready to schedule? Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> or visit our booking page.</p>
 `,
   },
 
@@ -631,7 +631,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers is based in Puyallup and serves South Hill, Sumner, Orting, Edgewood, and surrounding Pierce County communities. We're a family-run operation — not a franchise, not a rotating crew of strangers. When you book with us, you know who's showing up.</p>
 
-<p>Ready to book? Call <strong>(253) 970-0858</strong> or use the booking form on our homepage. First-time customers get $20 off a full detail.</p>
+<p>Ready to book? Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> or use the booking form on our homepage. First-time customers get $20 off a full detail.</p>
 `,
   },
 
@@ -694,7 +694,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Waiting until the car looks dirty to book a detail. By then, the damage is already done. Tree sap, bird droppings, rail dust, and industrial fallout all etch clear coat within days — sometimes hours on a hot day. The smart approach is scheduling on a calendar, not by appearance.</p>
 
-<p>If you're in Puyallup or South Pierce County and want a straightforward answer: book a full detail every 4–6 months, and let Crisp Auto Detailers keep it on a maintenance schedule so you don't have to think about it. Call <strong>(253) 970-0858</strong> or book online.</p>
+<p>If you're in Puyallup or South Pierce County and want a straightforward answer: book a full detail every 4–6 months, and let Crisp Auto Detailers keep it on a maintenance schedule so you don't have to think about it. Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> or book online.</p>
 `,
   },
 
@@ -761,7 +761,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>For a car you're going to sell in the next 6 months, or an older vehicle you're maintaining rather than investing in: wax and a quality sealant is the right move. You get great shine for photos and showings without paying for long-term protection you won't use.</p>
 
-<p>At Crisp Auto Detailers, ceramic protection is included in our Elite and Signature packages. Our Essential and Premium packages use a professional-grade sealant with carnauba top coat. Call <strong>(253) 970-0858</strong> to discuss which makes sense for your vehicle.</p>
+<p>At Crisp Auto Detailers, ceramic protection is included in our Elite and Signature packages. Our Essential and Premium packages use a professional-grade sealant with carnauba top coat. Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> to discuss which makes sense for your vehicle.</p>
 `,
   },
 
@@ -832,7 +832,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Crisp Auto Detailers covers South Hill and the broader Puyallup corridor — South Hill, Puyallup proper, Canyon Road, East Valley, Sumner, Edgewood, and Orting. We're a family-run operation, not a franchise, and we prioritize consistent results over volume.</p>
 
-<p>First-time South Hill customers get <strong>$20 off a full detail</strong>. Book at <strong>(253) 970-0858</strong>.</p>
+<p>First-time South Hill customers get <strong>$20 off a full detail</strong>. Book at <a href="tel:2539700858"><strong>(253) 970-0858</strong></a>.</p>
 `,
   },
 
@@ -911,7 +911,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>DIY interior detailing works well for routine maintenance. For odor elimination, pet hair removal, major stain treatment, carpet shampoo, or any interior that's been neglected for 6+ months — a professional with the right equipment will get materially better results in a fraction of the time.</p>
 
-<p>Crisp Auto Detailers serves Pierce County with full interior detailing as part of our Premium, Elite, and Signature packages. Call <strong>(253) 970-0858</strong> to book.</p>
+<p>Crisp Auto Detailers serves Pierce County with full interior detailing as part of our Premium, Elite, and Signature packages. Call <a href="tel:2539700858"><strong>(253) 970-0858</strong></a> to book.</p>
 `,
   },
 

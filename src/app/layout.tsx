@@ -76,6 +76,18 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-18416138303');
+
+              // Track phone number clicks for Google Ads conversion
+              document.addEventListener('click', function(e) {
+                var link = e.target.closest('a[href^="tel:"]');
+                if (link) {
+                  gtag('event', 'phone_call_click', {
+                    event_category: 'engagement',
+                    event_label: link.href,
+                    value: 1
+                  });
+                }
+              });
             `,
           }}
         />
