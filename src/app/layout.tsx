@@ -77,16 +77,24 @@ export default function RootLayout({
               gtag('js', new Date());
               gtag('config', 'AW-18416138303');
 
-              // Track phone number clicks for Google Ads conversion
+              // Google Ads conversion tracking for phone clicks
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') { window.location = url; }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-18416138303/35-oCKiFoPocEL_wv81E',
+                  'value': 1.0,
+                  'currency': 'USD',
+                  'event_callback': callback
+                });
+                return false;
+              }
+
+              // Auto-fire on any tel: link tap — no onclick needed on individual links
               document.addEventListener('click', function(e) {
                 var link = e.target.closest('a[href^="tel:"]');
-                if (link) {
-                  gtag('event', 'phone_call_click', {
-                    event_category: 'engagement',
-                    event_label: link.href,
-                    value: 1
-                  });
-                }
+                if (link) { gtag_report_conversion(link.href); }
               });
             `,
           }}
