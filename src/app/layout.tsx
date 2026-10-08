@@ -83,7 +83,7 @@ export default function RootLayout({
                   if (typeof(url) != 'undefined') { window.location = url; }
                 };
                 gtag('event', 'conversion', {
-                  'send_to': 'AW-18416138303/35-oCKiFoPocEL_wv81E',
+                  'send_to': 'AW-18416138303/EQK9CLeB-pQdEL_wv81E',
                   'value': 1.0,
                   'currency': 'USD',
                   'event_callback': callback
