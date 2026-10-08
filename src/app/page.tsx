@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const PHONE = "2539700858";
 const PHONE_DISPLAY = "(253) 970-0858";
+const SMS_HREF = `sms:+12539700858?body=Hi! I'd like a quick quote for auto detailing.`;
 const BLUE = "#1BBDD4";
 const NAVY = "#0D1B2A";
 const NAVY_DARK = "#071018";
@@ -38,6 +39,9 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <Link href="/blog" className="text-sm font-semibold hidden sm:block" style={{ color: BLUE }}>Tips &amp; Guides</Link>
+            <a href={SMS_HREF} className="text-sm font-semibold px-4 py-2 rounded-full hidden sm:block" style={{ border: `1.5px solid ${BLUE}`, color: BLUE }}>
+              💬 Text Us
+            </a>
             <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
               {PHONE_DISPLAY}
             </a>
@@ -304,6 +308,9 @@ export default function Home() {
               <a href={`tel:${PHONE}`} className="flex items-center justify-center gap-2 text-sm font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
                 📞 Ask About Crisp Care
               </a>
+              <a href={SMS_HREF} className="flex items-center justify-center gap-2 text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" style={{ border: `1.5px solid ${BLUE}`, color: BLUE }}>
+                💬 Text for a Quick Quote
+              </a>
               <p className="text-center text-xs text-gray-600 mt-2">
                 No prior service needed — <a href="/crisp-care" style={{ color: BLUE }}>learn how it works →</a>
               </p>
@@ -359,9 +366,14 @@ export default function Home() {
             Keep It Crisp.
           </p>
           <h2 className="text-2xl font-black text-white">Book Your Detail Today</h2>
-          <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 text-xl font-black px-10 py-4 rounded-full mt-6 mb-5 hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
-            📞 {PHONE_DISPLAY}
-          </a>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6 mb-4">
+            <a href={`tel:${PHONE}`} className="inline-flex items-center justify-center gap-2 text-xl font-black px-10 py-4 rounded-full hover:opacity-90 transition-opacity" style={{ backgroundColor: BLUE, color: "#fff" }}>
+              📞 {PHONE_DISPLAY}
+            </a>
+            <a href={SMS_HREF} className="inline-flex items-center justify-center gap-2 text-lg font-bold px-8 py-4 rounded-full hover:opacity-90 transition-opacity" style={{ border: `2px solid ${BLUE}`, color: BLUE }}>
+              💬 Text for a Quote
+            </a>
+          </div>
           <p className="text-gray-500 text-xs">
             crispautodetailers.com · Fully Insured
           </p>
