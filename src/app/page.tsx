@@ -39,9 +39,6 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <Link href="/blog" className="text-sm font-semibold hidden sm:block" style={{ color: BLUE }}>Tips &amp; Guides</Link>
-            <a href={SMS_HREF} className="text-sm font-semibold px-4 py-2 rounded-full hidden sm:block" style={{ border: `1.5px solid ${BLUE}`, color: BLUE }}>
-              💬 Text Us
-            </a>
             <a href={`tel:${PHONE}`} className="text-sm font-bold px-5 py-2 rounded-full" style={{ backgroundColor: BLUE, color: "#fff" }}>
               {PHONE_DISPLAY}
             </a>
@@ -380,6 +377,27 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Spacer so sticky bar doesn't cover content on mobile */}
+      <div className="h-20 sm:hidden" />
+
+      {/* Sticky bottom CTA bar — mobile only */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 flex sm:hidden" style={{ backgroundColor: "#071018", borderTop: "1px solid rgba(27,189,212,0.35)" }}>
+        <a
+          href={SMS_HREF}
+          className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-bold"
+          style={{ color: BLUE, borderRight: "1px solid rgba(27,189,212,0.2)" }}
+        >
+          💬 Text for a Quote
+        </a>
+        <a
+          href={`tel:${PHONE}`}
+          className="flex-1 flex items-center justify-center gap-2 py-4 text-sm font-bold text-white"
+          style={{ backgroundColor: BLUE }}
+        >
+          📞 Call Now
+        </a>
+      </div>
     </main>
   );
 }
